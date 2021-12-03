@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="db19f424-f4ec-46af-beab-66fd4f022e0b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5c8833b2-43b8-493c-8ac5-71b32b7a0c78" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Samoloty</ID>
   <Name>Samoloty</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -6,6 +6,32 @@
   <Annotations>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3018" scrolltop="-4308" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9504" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Samoloty" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3429" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000650d00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Samoloty" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
@@ -21,15 +47,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>0</Value>
+      <Value>-3018</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>0</Value>
+      <Value>-4308</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>0</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
@@ -42,48 +68,60 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c247010c-e7bf-4b91-91de-dc0a51b1999b">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="93ec6262-ba55-429b-adfc-03b95b9d78d8">
     <DataSourceViewID>Bold System DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="b5f2b473-11c3-4193-a820-c32dbdab76b8">
+  <ErrorConfiguration dwd:design-time-name="cd40594e-9aed-409b-b8bc-220498ecba76">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="f7baaa41-26f8-4472-9ed6-ba3bdfc94379">
+    <Attribute dwd:design-time-name="f9a2c237-c2e4-4987-bd0a-2142136184a8">
       <ID>ID Samolotu</ID>
       <Name>ID Samolotu</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c96698bb-4e9e-4d7c-943e-103b20f89b6d">
+        <KeyColumn dwd:design-time-name="27c063c5-dc46-4f8f-ae6e-a43438f6f388">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3a5e8950-03ba-46ab-a411-4d094b7c8c4c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="293fd44d-1ad1-4009-a23e-0c2793518cc0">
             <TableID>dbo_Samoloty</TableID>
             <ColumnID>ID_Samolotu</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="8460edc5-d79c-422e-af6d-b13ac623245b">
+        <AttributeRelationship dwd:design-time-name="1b2b8cfc-79c9-4bb5-9ecc-aae893d92ae0">
           <AttributeID>ID Linii Lotniczej</AttributeID>
           <Name>ID Linii Lotniczej</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="be642a57-94dd-4bca-94d5-cc24356a9479">
+          <AttributeID>Model</AttributeID>
+          <Name>Model</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="38722d90-5373-410b-ada0-79d19d851339">
+          <AttributeID>Wiek</AttributeID>
+          <Name>Wiek</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="31b20ef8-c3f5-475b-b065-e41fdcf0c888">
+          <AttributeID>Rodzaj Samolotu</AttributeID>
+          <Name>Rodzaj Samolotu</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ba458dcb-2a19-427a-94bb-3003bd36881c">
+    <Attribute dwd:design-time-name="a0a49652-6a24-4081-90c9-6f1d3e3d6f9e">
       <ID>ID Linii Lotniczej</ID>
       <Name>ID Linii Lotniczej</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3f1b1e8a-1924-4a07-aeed-cc1c3e406e00">
+        <KeyColumn dwd:design-time-name="147b8ac9-73ac-4185-9fa1-e1890e6da00f">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ae75697-76c0-41e5-90ef-1521c6f8499d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="36c17459-7d1c-4884-8b58-33560a63d5d0">
             <TableID>dbo_Samoloty</TableID>
             <ColumnID>ID_Linii_Lotniczej</ColumnID>
           </Source>
@@ -94,6 +132,77 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="e575989a-206a-49dc-9128-5444a3c527c9">
+      <ID>Model</ID>
+      <Name>Model</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="89105aca-723d-4a8e-ab8f-29980fd7221c">
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f67f5f6-e20c-4b7c-912b-c4948d409805">
+            <TableID>dbo_Samoloty</TableID>
+            <ColumnID>Model</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4dfc6c22-d34f-4516-a15c-d7ca7285c44a">
+      <ID>Wiek</ID>
+      <Name>Wiek</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc12a830-b08e-4b6d-82b8-a4f9403de5c2">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5ff152b-a793-45f2-9a55-6a7571cad8d4">
+            <TableID>dbo_Samoloty</TableID>
+            <ColumnID>Wiek</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="865a56de-37e6-40c6-9c40-6171cf67197b">
+      <ID>Rodzaj Samolotu</ID>
+      <Name>Rodzaj Samolotu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b3e144a1-a386-45e5-8bd8-9ebc00fa53bc">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="edde19ca-c69a-469d-935c-e5a28dae2586">
+            <TableID>dbo_Samoloty</TableID>
+            <ColumnID>Rodzaj_Samolotu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
   </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="6b40a743-4414-42c6-8ada-d3edcf990b59">
+      <ID>Hierarchy</ID>
+      <Name>Od rodzaju do modelu</Name>
+      <Levels>
+        <Level dwd:design-time-name="21cd8c2d-e3d8-425b-8914-526b87422ea2">
+          <ID>Rodzaj Samolotu</ID>
+          <Name>Rodzaj Samolotu</Name>
+          <SourceAttributeID>Rodzaj Samolotu</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ff5ec4e4-d4cf-498e-a0c2-6e0edd0cba5b">
+          <ID>Wiek</ID>
+          <Name>Wiek</Name>
+          <SourceAttributeID>Wiek</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="855065ba-b356-47ed-b46c-7e3b8b09153b">
+          <ID>Model</ID>
+          <Name>Model</Name>
+          <SourceAttributeID>Model</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

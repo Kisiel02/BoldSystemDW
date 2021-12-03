@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="26797387-0f8e-42c9-9e02-f45a2a825b4d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="52a8d7f4-7cbe-4a90-9310-67216a8ba2f0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Warunki Pogodowe</ID>
   <Name>Warunki Pogodowe</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2340" scrolltop="-7112" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9504" y="16531" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2340" scrolltop="-4488" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9504" y="11282" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Warunki_Pogodowe" left="189" top="296" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4784" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Warunki_Pogodowe" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4784" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e0000b012000003090000" />
             </control>
@@ -51,15 +51,15 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-7112</Value>
+      <Value>-4488</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>189</Value>
+      <Value>20</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>296</Value>
+      <Value>0</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -68,41 +68,41 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d2c04f0c-ed52-4b86-853b-60d1aee50efd">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a2c4a264-212b-4fe1-9688-12a30e17b1f1">
     <DataSourceViewID>Bold System DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="10a3887c-957d-4934-ae89-fad87eeb9c76">
+  <ErrorConfiguration dwd:design-time-name="04a31c36-9d89-473c-9915-f05584a35e5c">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="dae597ae-6a88-4910-9fa0-f5c909bfcc47">
+    <Attribute dwd:design-time-name="c46cd4f1-f6bd-412e-9755-8fc1fc5d4b19">
       <ID>ID Warunkow Pogodowych</ID>
       <Name>ID Warunkow Pogodowych</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="daf119df-0ca8-4fd2-b59b-5696aed7b421">
+        <KeyColumn dwd:design-time-name="723c0a9e-4ccd-4e4b-9174-260e8cf74229">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4759064-8d31-462c-a593-7cdf3d136738">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c062b075-bebd-4bba-bfe2-8140d08f7357">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>ID_Warunkow_Pogodowych</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="15d0c107-3bb9-4c4a-99f9-69cc9d67ec70">
+        <AttributeRelationship dwd:design-time-name="c1db5e0c-0e11-43a6-9899-5a028cfee982">
           <AttributeID>Temperatura</AttributeID>
           <Name>Temperatura</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="76a90fc4-6d41-4b68-86dd-58fea98687e0">
+        <AttributeRelationship dwd:design-time-name="ae7f61b4-4faf-4d56-b9c9-5f9abc4abb8f">
           <AttributeID>Predkosc Wiatru</AttributeID>
           <Name>Predkosc Wiatru</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9b1a891c-1edd-43bc-b764-98750e28d8df">
+        <AttributeRelationship dwd:design-time-name="07cccf86-9eed-42ea-8cfe-260f67e5ae65">
           <AttributeID>Czy Opady</AttributeID>
           <Name>Czy Opady</Name>
         </AttributeRelationship>
@@ -111,14 +111,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="672b9ada-c020-46ba-a881-54c810012735">
+    <Attribute dwd:design-time-name="d50d5de4-40fa-4a35-bc2b-1d0fe1b7a9c0">
       <ID>Temperatura</ID>
       <Name>Temperatura</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="505c2d34-c0e5-47ae-b756-d56a9a589d0f">
+        <KeyColumn dwd:design-time-name="ba274634-4698-456e-ae4d-705eb6b48846">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="112ee588-1a34-49c2-af11-96589be3037a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d03fad0-0fb8-44fc-be40-e3a7ef5c0ed5">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>Temperatura</ColumnID>
           </Source>
@@ -127,14 +127,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7122c24d-c3d3-4f25-9bf5-e081021fb0ff">
+    <Attribute dwd:design-time-name="35474f21-6b65-421d-b3a3-43f7668f546c">
       <ID>Predkosc Wiatru</ID>
       <Name>Predkosc Wiatru</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c3876cf0-31dd-4ef6-960f-6c6c07044a0e">
+        <KeyColumn dwd:design-time-name="5f3f3046-3f6a-4a88-89d1-b8ff3f13289f">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b147d05a-9795-4493-a529-2aae14ea0f6c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="44cfcca8-cfb6-4486-b2a4-5bd118a90f48">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>Predkosc_Wiatru</ColumnID>
           </Source>
@@ -143,14 +143,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="40a0a881-c084-4607-be32-2ee2c166ac8c">
+    <Attribute dwd:design-time-name="f48fc2ee-e1ab-45f9-ac02-ea21ba7cca60">
       <ID>Czy Opady</ID>
       <Name>Czy Opady</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cd43ed13-74d6-4add-bc15-f026c7bbb409">
+        <KeyColumn dwd:design-time-name="406156bf-4a10-4f86-91cf-57778a7bbc32">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="13298917-1fde-4281-bb41-9e56dd788063">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca707a4b-8c8d-49cb-9d3d-e2a030a91a1a">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>Czy_Opady</ColumnID>
           </Source>

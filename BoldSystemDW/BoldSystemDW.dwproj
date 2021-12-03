@@ -47,6 +47,10 @@
       <Name>Awarie.dim</Name>
       <FullPath>Awarie.dim</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Linia Lotnicza.dim</Name>
+      <FullPath>Linia Lotnicza.dim</FullPath>
+    </ProjectItem>
   </Dimensions>
   <DataSources>
     <ProjectItem>
