@@ -1,0 +1,125 @@
+Aérospatiale-BAC Concorde
+Airbus A220
+Airbus A300
+Airbus A310
+Airbus A318
+Airbus A319
+Airbus A320
+Airbus A321
+Airbus A330
+Airbus A340
+Airbus A350
+Airbus A380
+Airspeed Ambassador
+Antonov An-140
+Antonov An-148
+Antonov An-158
+Antonov An-178
+Armstrong Whitworth Ensign
+ATR 42
+ATR 72
+BAC One-Eleven
+Beechcraft 1900
+Boeing 247
+Boeing 307
+Boeing 377
+Boeing 707/720
+Boeing 717
+Boeing 727
+Boeing 737
+Boeing 747
+Boeing 757
+Boeing 767
+Boeing 777
+Boeing 787
+Bombardier CRJ200
+Bombarier CRJ700
+Bombardier Dash 8
+Bristol Brabazon
+Bristol Britannia
+British Aerospace 146
+British Aerospace ATP
+British Aerospace Jetstream
+British Aerospace Jetstream 41
+Comac ARJ21
+Comac C919
+Comac C929
+Comac C939
+Convair CV-240
+Convair 880
+Convair 990
+de Havilland Canada Dash 7
+de Havilland Comet
+de Havilland Dove
+de Havilland Heron
+Dornier 228
+Dornier 328
+Dornier 328JET
+Douglas DC-1
+Douglas DC-2
+Douglas DC-3
+Douglas DC-4
+Douglas DC-5
+Douglas DC-6
+Douglas DC-7
+Douglas DC-8
+Douglas DC-9
+Douglas DC-10
+Embraer E-Jets
+Embraer EMB 110
+Embraer EMB 120
+Embraer ERJ 145
+Fairchild Dornier 328JET
+Fairchild Metroliner
+Fokker 50
+Fokker 70
+Fokker 100
+Fokker F27 Friendship
+Fokker F28 Fellowship
+Ford Trimotor
+Handley Page Dart Herald
+Handley Page Hermes
+Handley Page Jetstream
+Hawker Siddeley Trident
+Ilyushin Il-12
+Ilyushin Il-14
+Ilyushin Il-18
+Ilyushin Il-62
+Ilyushin Il-86
+Ilyushin Il-96
+Ilyushin Il-114
+Irkut MC-21
+Let L-410 Turbolet
+Les Scott
+Lockheed Constellation
+Lockheed L-1049 Super Constellation
+Lockheed L-1649 Starliner
+Lockheed Martin L-1011 TriStar
+Lockheed Martin L-188 Electra
+Martin 2-0-2
+Martin 4-0-4
+McDonnell Douglas MD-11
+McDonnell Douglas MD-80
+McDonnell Douglas MD-85
+McDonnell Douglas MD-95 (Boeing 717)
+Short 330
+Short SC.7 Skyvan
+Saab 2000
+Saab 340
+Short 360
+Sud Aviation Caravelle
+Sukhoi Superjet 100
+Tupolev Tu-104
+Tupolev Tu-114
+Tupolev Tu-124
+Tupolev Tu-134
+Tupolev Tu-144
+Tupolev Tu-154
+Tupolev Tu-204
+Tupolev Tu-334
+VFW-Fokker 614
+Vickers Vanguard
+Vickers VC10
+Vickers Viscount
+Xian MA60
+Xian Y-7
