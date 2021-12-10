@@ -46,7 +46,7 @@ file = open(linieLotnicze, "r+")
 num_lines = sum(1 for line in file)
 
 for i in range(num_lines,liczbaLini):
-    file.write(f'{bulkSeparetor}{uuid.uuid4()}{bulkSeparetor}{faker.company()}\n')
+    file.write(f'{bulkSeparetor}{str(uuid.uuid4())[:4]}{bulkSeparetor}{faker.company()}\n')
 
 file.close()
 
@@ -56,7 +56,7 @@ file.close()
 file = open(koordynatorzy, "r+")
 num_lines = sum(1 for line in file)
 for i in range(num_lines, liczbaKoordynatorow):
-    file.write(f'{bulkSeparetor}{uuid.uuid4()}{bulkSeparetor}{random.randint(1,25)}\n')
+    file.write(f'{bulkSeparetor}{uuid.uuid4()}\n')
 
 file.close()
 
@@ -73,7 +73,7 @@ for i in range(num_lines, liczbaSamolotow):
     rok = random.randint(1990, 2020)
     linia = random.randint(1, liczbaLini)
     kategoriaWielkosc = random.randint(0,3)
-    file.write(f'{bulkSeparetor}{model}{bulkSeparetor}{rok}{bulkSeparetor}{linia}\n')
+    file.write(f'{bulkSeparetor}{model}{bulkSeparetor}{rok}{bulkSeparetor}{kategoriaWielkosc}{bulkSeparetor}{linia}\n')
 
 file.close()
 
@@ -108,7 +108,7 @@ for i in range(num_lines, liczbaPrzegladow):
                f'{bulkSeparetor}{data}'
                f'{bulkSeparetor}{koordynator}'
                f'{bulkSeparetor}{temp}'
-               f'{bulkSeparetor}{opady}'
+               f'{bulkSeparetor}{int(opady)}'
                f'{bulkSeparetor}{wiatr}'
                f'\n')
 
