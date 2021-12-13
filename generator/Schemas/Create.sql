@@ -1,6 +1,6 @@
-/*CREATE DATABASE BoldSystem
+CREATE DATABASE BoldSystem
 GO
-*/
+
 USE BoldSystem
 GO
 
@@ -39,7 +39,7 @@ CREATE TABLE PrzegladySamolotow
 	ID INTEGER IDENTITY(1,1) PRIMARY KEY,
 	CzasTrwaniaPrzegladu TIME,
 	IdentyfikatorZespolu INTEGER,
-	Opoznienie INTEGER,
+	Opoznienie TIME,
 	Samolot INTEGER FOREIGN KEY REFERENCES Samoloty,
 	Awaria INTEGER,
 	StartPrzegladu DATETIME,

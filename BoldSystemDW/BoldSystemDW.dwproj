@@ -17,16 +17,6 @@
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Bold System DW 1.cube</Name>
-      <FullPath>Bold System DW 1.cube</FullPath>
-      <Dependencies>
-        <ProjectItem>
-          <Name>Bold System DW 1.partitions</Name>
-          <FullPath>Bold System DW 1.partitions</FullPath>
-        </ProjectItem>
-      </Dependencies>
-    </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
@@ -72,10 +62,6 @@
     <ProjectItem>
       <Name>Bold System DW.dsv</Name>
       <FullPath>Bold System DW.dsv</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Bold System DW 1.dsv</Name>
-      <FullPath>Bold System DW 1.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
   <Configurations>
