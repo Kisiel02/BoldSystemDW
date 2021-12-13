@@ -6,6 +6,6 @@ SELECT a
 FROM
 	(VALUES 
 		('Brak awarii'),
-			('Ma≥a awaria'),
-			('årednia awaria'),
-			('Duøa awaria')) AS Krytycznosc(a);
+			('Ma≈Ça awaria'),
+			('≈örednia awaria'),
+			('Du≈ºa awaria')) AS Krytycznosc(a);
