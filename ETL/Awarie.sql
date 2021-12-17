@@ -8,4 +8,6 @@ FROM
 		('Brak awarii'),
 			('Ma³a awaria'),
 			('Œrednia awaria'),
-			('Du¿a awaria')) AS Krytycznosc(a);
+			('Du¿a awaria'),
+			('GIGA AWARIA')
+			) AS Krytycznosc(a);

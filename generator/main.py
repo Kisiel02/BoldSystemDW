@@ -37,7 +37,7 @@ dateStart = datetime.datetime.strptime('2021-09-02', '%Y-%m-%d')
 dateEnd = datetime.datetime.strptime('2021-12-01', '%Y-%m-%d')
 
 zespoly = "Zespoly.csv"
-liczbaZespolow = 60
+liczbaZespolow = 70
 
 # linie lotnicze
 file = open(linieLotnicze, "a")
