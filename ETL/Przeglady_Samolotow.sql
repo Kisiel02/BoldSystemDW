@@ -57,12 +57,12 @@ FROM
 	JOIN dbo.Samoloty as SW ON SW.Model = ST2.ModelSamolotu AND
 		SW.Rodzaj_Samolotu = 
 		CASE
-			WHEN ST2.RodzajSamolotu = 0 THEN 'Pasa¿erski'
+			WHEN ST2.RodzajSamolotu = 0 THEN 'Pasazerski'
 			ELSE 'Transportowy'
 		END AND SW.Wiek = 
 		CASE
 			WHEN YEAR(GETDATE()) - ST2.RokProdukcji < 5 THEN 'Nowy samolot'
-			WHEN YEAR(GETDATE()) - ST2.RokProdukcji < 25 THEN 'Samolot o œrednim wieku'
+			WHEN YEAR(GETDATE()) - ST2.RokProdukcji < 25 THEN 'Samolot o srednim wieku'
 			ELSE 'Stary samolot'
 		END AND SW.ID_Linii_Lotniczej = 
 			(SELECT ID_Linii_Lotniczej FROM dbo.LiniaLotnicza AS LL
@@ -70,25 +70,25 @@ FROM
 				LL.Nazwa = ST3.Nazwa)
 	JOIN dbo.Warunki_Pogodowe AS WPW ON WPW.Czy_Opady = 
 		CASE
-			WHEN ST1.CzyOpady = 1 THEN 'Opady wyst¹pi³y'
-			ELSE 'Brak opadów'
+			WHEN ST1.CzyOpady = 1 THEN 'Opady wystapily'
+			ELSE 'Brak opadow'
 		END AND WPW.Temperatura =
 		CASE
 			WHEN ST1.Temperatura < 5 THEN 'Niska temperatura'
-			WHEN ST1.Temperatura <= 20 THEN 'Œrednia temperatura'
+			WHEN ST1.Temperatura <= 20 THEN 'Srednia temperatura'
 			ELSE 'Wysoka temperatura'
 		END AND WPW.Predkosc_Wiatru = 
 		CASE
-			WHEN ST1.Wiatr < 20 THEN 'Ma³a prêdkoœæ wiatru'
-			WHEN ST1.Wiatr <= 50 THEN 'Œrednia prêdkoœæ wiatru'
-			ELSE 'Du¿a prêdkoœæ wiatru'
+			WHEN ST1.Wiatr < 20 THEN 'Mala predkosc wiatru'
+			WHEN ST1.Wiatr <= 50 THEN 'Srednia predkosc wiatru'
+			ELSE 'Duza predkosc wiatru'
 		END	
 	JOIN dbo.Awarie AS AW ON AW.Krytycznosc = 
 	CASE
 		WHEN ST1.Awaria = 0 THEN 'Brak awarii'
-		WHEN ST1.Awaria = 1 THEN 'Ma³a awaria'
-		WHEN ST1.Awaria = 2 THEN 'Œrednia awaria'
-		WHEN ST1.Awaria = 3 THEN 'Du¿a awaria'
+		WHEN ST1.Awaria = 1 THEN 'Mala awaria'
+		WHEN ST1.Awaria = 2 THEN 'Srednia awaria'
+		WHEN ST1.Awaria = 3 THEN 'Duza awaria'
 		ELSE 'GIGA AWARIA'
 	END
 	JOIN zespolyTmp AS ZW ON 
@@ -97,7 +97,7 @@ FROM
 	) as X
 	go
 	SELECT * FROM vETLFPrzegladySamolotow
-
+	
 GO
 	MERGE INTO PrzegladySamolotow AS TT
 		USING vETLFPrzegladySamolotow AS ST
@@ -120,5 +120,5 @@ GO
 					ID_Warunkow_Pogodowych,
 					Opoznienie,
 					CzasTrwaniaPrzegladu);
-
+					
 

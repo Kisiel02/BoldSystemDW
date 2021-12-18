@@ -18,8 +18,6 @@ BULK INSERT dbo.BoldSystemTemp
     TABLOCK
     )
 
-SELECT * FROM dbo.BoldSystemTemp;
-
 GO
 If (object_id('vETLZespolyData') is not null) Drop View vETLZespolyData;
 go
@@ -40,7 +38,7 @@ SELECT
 FROM dbo.BoldSystemTemp as t1
 go
 
-SELECT * FROM vETLZespolyData;
+select * from vETLZespolyData;
 
 MERGE INTO Zespoly as TT
 	USING vETLZespolyData as ST
@@ -86,7 +84,6 @@ INSERT INTO Zespoly(
 	FROM Zespoly;
 
 
-DROP TABLE dbo.BoldSystemTemp;
 Drop View vETLZespolyData; 
 
 SELect * from Zespoly;
