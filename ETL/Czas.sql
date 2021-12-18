@@ -18,12 +18,12 @@ While @Hour <= 23
 					INSERT INTO Czas VALUES(
 						@Hour,
 						@Minute,
-						Cast((case when @Time < cast('03:59:59' AS TIME) THEN 'pomiędzy 0 a 4'
-							  when @Time < cast('07:59:59' AS TIME) THEN 'pomiędzy 4 a 8'
-							  when @Time < cast('11:59:59' AS TIME) THEN 'pomiędzy 8 a 12'
-							  when @Time < cast('15:59:59' AS TIME) THEN 'pomiędzy 12 a 16'
-							  when @Time < cast('19:59:59' AS TIME) THEN 'pomiędzy 16 a 20'
-							  ELSE 'pomiędzy 20 a 24(0)'
+						Cast((case when @Time < cast('03:59:59' AS TIME) THEN 'pomiedzy 0 a 4'
+							  when @Time < cast('07:59:59' AS TIME) THEN 'pomiedzy 4 a 8'
+							  when @Time < cast('11:59:59' AS TIME) THEN 'pomiedzy 8 a 12'
+							  when @Time < cast('15:59:59' AS TIME) THEN 'pomiedzy 12 a 16'
+							  when @Time < cast('19:59:59' AS TIME) THEN 'pomiedzy 16 a 20'
+							  ELSE 'pomiedzy 20 a 24(0)'
 						 end) as varchar(40))
 					);  
 					Set @Minute = @Minute + 1;

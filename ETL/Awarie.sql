@@ -8,7 +8,7 @@ SELECT a
 FROM
 	(VALUES 
 		('Brak awarii'),
-		('Mała awaria'),
-		('Średnia awaria'),
-		('Duża awaria'),
+		('Mala awaria'),
+		('Srednia awaria'),
+		('Duza awaria'),
 		('GIGA AWARIA')) AS Krytycznosc(a);
