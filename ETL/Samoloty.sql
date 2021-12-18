@@ -14,12 +14,12 @@ FROM
 	(SELECT 
 		Model = ST1.ModelSamolotu,
 		CASE
-			WHEN ST1.RodzajSamolotu = 0 THEN 'Pasaøerski'
+			WHEN ST1.RodzajSamolotu = 0 THEN 'Pasa≈ºerski'
 			ELSE 'Transportowy'
 		END AS RodzajSamolotu,
 		CASE
 			WHEN YEAR(GETDATE()) - ST1.RokProdukcji < 5 THEN 'Nowy samolot'
-			WHEN YEAR(GETDATE()) - ST1.RokProdukcji < 25 THEN 'Samolot o úrednim wieku'
+			WHEN YEAR(GETDATE()) - ST1.RokProdukcji < 25 THEN 'Samolot o ≈õrednim wieku'
 			ELSE 'Stary samolot'
 		END AS Wiek,
 		KodLiniiIATA,

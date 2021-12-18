@@ -13,19 +13,19 @@ FROM
 	(SELECT 
 		 CASE
 			WHEN ST1.Temperatura < 5 THEN 'Niska temperatura'
-			WHEN ST1.Temperatura <= 20 THEN 'Œrednia temperatura'
+			WHEN ST1.Temperatura <= 20 THEN 'Åšrednia temperatura'
 			ELSE 'Wysoka temperatura'
 		END
 		AS Temperatura,
 		CASE
-			WHEN ST1.Wiatr < 20 THEN 'Ma³a prêdkoœæ wiatru'
-			WHEN ST1.Wiatr <= 50 THEN 'Œrednia prêdkoœæ wiatru'
-			ELSE 'Du¿a prêdkoœæ wiatru'
+			WHEN ST1.Wiatr < 20 THEN 'MaÅ‚a prÄ™dkoÅ›Ä‡ wiatru'
+			WHEN ST1.Wiatr <= 50 THEN 'Åšrednia prÄ™dkoÅ›Ä‡ wiatru'
+			ELSE 'DuÅ¼a prÄ™dkoÅ›Ä‡ wiatru'
 		END
 		AS Wiatr,
 		CASE
-			WHEN ST1.CzyOpady = 1 THEN 'Opady wyst¹pi³y'
-			ELSE 'Brak opadów'
+			WHEN ST1.CzyOpady = 1 THEN 'Opady wystÄ…piÅ‚y'
+			ELSE 'Brak opadÃ³w'
 		END
 		AS CzyOpady
 		 FROM BoldSystem.dbo.PrzegladySamolotow as ST1)

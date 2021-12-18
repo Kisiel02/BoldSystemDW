@@ -9,7 +9,7 @@ IloscStazystow INTEGER);
 go
 
 BULK INSERT dbo.BoldSystemTemp
-    FROM 'E:\VisualProjekty\BoldSystemDW\generator\Zespoly.csv'
+    FROM 'C:\Users\barto\Desktop\BoldSystemDW\generator\Zespoly.csv'
     WITH
     (
     FIRSTROW = 2,
@@ -23,23 +23,22 @@ If (object_id('vETLZespolyData') is not null) Drop View vETLZespolyData;
 go
 CREATE VIEW vETLZespolyData
 AS
-SELECT 
-	t1.[IdentyfikatorZespolu] as [ID],
+SELECT
 	t1.[NazwaZespolu] as [NazwaZespolu],
 	CASE
-		WHEN t1.IloscCzlonkowZespoluBezStazystow < 5 THEN 'Mniej ni¿ 5 cz³onków zespo³u'
-		WHEN t1.IloscCzlonkowZespoluBezStazystow <= 10 THEN 'Pomiêdzy 5 a 10  cz³onków zespo³u'
-		ELSE 'wiêcej ni¿ 10 cz³onków zespo³u'
+		WHEN t1.IloscCzlonkowZespoluBezStazystow < 5 THEN 'Mniej niz 5 czlonkow zespolu'
+		WHEN t1.IloscCzlonkowZespoluBezStazystow <= 10 THEN 'Pomiedzy 5 a 10  czlonkow zespolu'
+		ELSE 'wiecej niz 10 czlonkow zespolu'
 	END AS [IloscCzlonkowZespoluBezStazystow],
 	CASE
-		WHEN t1.IloscStazystow < 5 THEN 'Mniej ni¿ 5 sta¿ystów w zespole'
-		WHEN t1.IloscStazystow <= 10 THEN 'Pomiêdzy 5 a 10 sta¿ystów w zespole'
-		ELSE 'Wiêcej ni¿ 10 sta¿ystów w zespole'
+		WHEN t1.IloscStazystow < 5 THEN 'Mniej niz 5 stazystow w zespole'
+		WHEN t1.IloscStazystow <= 10 THEN 'Pomiedzy 5 a 10 stazystow w zespole'
+		ELSE 'Wiecej niz 10 stazystow w zespole'
 	END AS [IloscStazystow]
 FROM dbo.BoldSystemTemp as t1
 go
 
-select * from vETLZespolyData
+select * from vETLZespolyData;
 
 MERGE INTO Zespoly as TT
 	USING vETLZespolyData as ST
@@ -52,16 +51,16 @@ MERGE INTO Zespoly as TT
 					ST.IloscStazystow,
 					1)
 			WHEN Matched
-				AND (ST.NazwaZespolu <> TT.Nazwa_Zespolu
-				OR ST.IloscCzlonkowZespoluBezStazystow <> TT.Ilosc_Czlonkow	
+				AND (
+				ST.IloscCzlonkowZespoluBezStazystow <> TT.Ilosc_Czlonkow
 				OR ST.IloscStazystow <> TT.Ilosc_Stazystow)
-			THEN
-				UPDATE
-				SET TT.Aktualnosc = 0
+				THEN
+					UPDATE
+					SET TT.Aktualnosc = 0
 			WHEN Not Matched BY Source
-			THEN
-				UPDATE
-				SET TT.Aktualnosc = 0;
+				THEN
+					UPDATE
+					SET TT.Aktualnosc = 0;
 
 -- INSERTING CHANGED ROWS TO THE Zespoly TABLE
 INSERT INTO Zespoly(

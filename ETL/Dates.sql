@@ -20,7 +20,7 @@ While @DateInProcess <= @EndDate
 			Cast((case when month(@DateInProcess) in (12, 1, 2) then 'Zima'
 				  when month(@DateInProcess) in (3, 4, 5) then 'Wiosna'
 				  when month(@DateInProcess) in (6, 7, 8) then 'Lato'
-				  when month(@DateInProcess) in (9, 10, 11) then 'Jesieñ'
+				  when month(@DateInProcess) in (9, 10, 11) then 'Jesien'
 			 end) as varchar(6))
 		);  
 		Set @DateInProcess = DateAdd(d, 1, @DateInProcess);
