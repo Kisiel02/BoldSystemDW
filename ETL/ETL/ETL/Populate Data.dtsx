@@ -1,0 +1,701 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/18/2021 12:45:54 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-KOQJN8CK"
+  DTS:CreatorName="LAPTOP-KOQJN8CK\barto"
+  DTS:DTSID="{BF88AC64-09CB-4283-839F-7E965D37E5EA}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.170"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Populate Data"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{86079E93-DFF2-49E7-8E14-E53CFD13EACE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Awarie.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D136AB7B-1EA9-42AA-B366-5532FD69D9D0}"
+      DTS:ObjectName="Awarie.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\Awarie.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Czas.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{475E734B-F7A2-4F8D-BAD3-3731B02BF498}"
+      DTS:ObjectName="Czas.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\Czas.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Dates.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D1F6415D-412A-4433-99C7-1098DC5DE361}"
+      DTS:ObjectName="Dates.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\Dates.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Koordynatorzy.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{6BF0DB44-D038-46DC-8857-F2E199A4CE71}"
+      DTS:ObjectName="Koordynatorzy.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\Koordynatorzy.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LiniaLotnicza.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{F00CEA06-44C8-47E9-A0C6-2D131D23D83B}"
+      DTS:ObjectName="LiniaLotnicza.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\LiniaLotnicza.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+      DTS:ObjectName="localhost">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BoldSystem]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{49D33DF2-E769-465C-93E0-FD8679D0B03B}"
+      DTS:ObjectName="localhost.BoldSystem">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=BoldSystem;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BoldSystemDW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{725E784C-38B1-499F-8199-49656B3A8ED3}"
+      DTS:ObjectName="localhost.BoldSystemDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=BoldSystemDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Przeglady_Samolotow.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{9CF35796-CD1B-4F7C-BD33-F9B84A8CC128}"
+      DTS:ObjectName="Przeglady_Samolotow.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\Przeglady_Samolotow.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Samoloty.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{4B93F955-87BB-4D08-A496-AE832660CA54}"
+      DTS:ObjectName="Samoloty.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\Samoloty.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WarunkiPogodowe.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{E60025C2-AA14-414C-9B3A-406549C303BD}"
+      DTS:ObjectName="WarunkiPogodowe.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\WarunkiPogodowe.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Zespoly.sql]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{12A9894A-CA50-4255-9086-94E4D83342DF}"
+      DTS:ObjectName="Zespoly.sql">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\barto\Desktop\BoldSystemDW\ETL\Zespoly.sql" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Awarie"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7F3849EE-8481-4FCB-A9E3-C20A2BB02463}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Awarie"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Awarie.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Czas"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Czas"
+      DTS:DTSID="{03025775-832F-4BCA-A04D-C0BE864661D0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Czas"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Czas.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Daty"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Daty"
+      DTS:DTSID="{A0412B02-43E8-432F-8C95-FA8D989C33D7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Daty"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Dates.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Koordynatorzy"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{198D0591-C535-40D5-809A-64F3529C02A0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Koordynatorzy"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Koordynatorzy.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Linia Lotnicza"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Linia Lotnicza"
+      DTS:DTSID="{6185E9A7-F510-42D3-B79E-CCC356791E21}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Linia Lotnicza"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="LiniaLotnicza.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Przeglady_Samolotow"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Przeglady_Samolotow"
+      DTS:DTSID="{0B92358E-129D-41E3-8284-DA4C9D3497D8}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Przeglady_Samolotow"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Przeglady_Samolotow.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Samoloty"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Samoloty"
+      DTS:DTSID="{7F706154-813C-466E-8E5D-FDFC67F4ED07}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Samoloty"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Samoloty.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Warunki pogodowe"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Warunki pogodowe"
+      DTS:DTSID="{352EF7AD-ED59-4E6F-9484-9EAD05A8BD01}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Warunki pogodowe"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="WarunkiPogodowe.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Zespoly"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Zespoly"
+      DTS:DTSID="{635F14E4-CDC4-4202-99A7-743E1BDC888F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Zespoly"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7EBEE95A-9735-4DFE-9C47-CEFF43D77725}"
+          SQLTask:SqlStmtSourceType="FileConnection"
+          SQLTask:SqlStatementSource="Zespoly.sql" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C2B57106-16C7-432A-9C97-9E6D10147CE8}"
+      DTS:From="Package\Linia Lotnicza"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Samoloty" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{A55E53C8-1137-4D53-8D41-29ED2B638E95}"
+      DTS:From="Package\Koordynatorzy"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Przeglady_Samolotow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{6778E94D-4CF8-46C5-9AD3-FA7AD49BA1B1}"
+      DTS:From="Package\Awarie"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Przeglady_Samolotow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{53505AE9-99E2-40B4-A844-C9230DACC11E}"
+      DTS:From="Package\Daty"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Przeglady_Samolotow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{1B7F8675-05EF-41C5-A6D2-C94FAABFD56B}"
+      DTS:From="Package\Czas"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Przeglady_Samolotow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{D5B835B2-E904-4F33-809B-14BD3CF0E2B1}"
+      DTS:From="Package\Warunki pogodowe"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Przeglady_Samolotow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{B6D87CFA-E2D2-4D75-8D9D-4B0737D9D3C9}"
+      DTS:From="Package\Zespoly"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Przeglady_Samolotow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{BB99CA4A-342C-4CE3-986E-666E528FCAE6}"
+      DTS:From="Package\Samoloty"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Przeglady_Samolotow" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Koordynatorzy"
+          TopLeft="200,144" />
+        <NodeLayout
+          Size="111,42"
+          Id="Package\Awarie"
+          TopLeft="379,136" />
+        <NodeLayout
+          Size="101,42"
+          Id="Package\Czas"
+          TopLeft="680,145" />
+        <NodeLayout
+          Size="101,42"
+          Id="Package\Daty"
+          TopLeft="534,136" />
+        <NodeLayout
+          Size="142,42"
+          Id="Package\Linia Lotnicza"
+          TopLeft="30,164" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Samoloty"
+          TopLeft="107,292" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="101,206">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67,86"
+              Start="0,0"
+              End="67,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,39"
+                    Point2="0,43"
+                    Point3="4,43" />
+                  <mssgle:LineSegment
+                    End="63,43" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63,43"
+                    Point2="67,43"
+                    Point3="67,47" />
+                  <mssgle:LineSegment
+                    End="67,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Warunki pogodowe"
+          TopLeft="799,201" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Zespoly"
+          TopLeft="923,288" />
+        <NodeLayout
+          Size="203,61"
+          Id="Package\Przeglady_Samolotow"
+          TopLeft="394,420" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="273.5,186">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="173.25,234"
+              Start="0,0"
+              End="173.25,226.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,149.977309562399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,149.977309562399"
+                    Point2="0,153.977309562399"
+                    Point3="4,153.977309562399" />
+                  <mssgle:LineSegment
+                    End="169.25,153.977309562399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="169.25,153.977309562399"
+                    Point2="173.25,153.977309562399"
+                    Point3="173.25,157.977309562399" />
+                  <mssgle:LineSegment
+                    End="173.25,226.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="434.5,178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="36.625,242"
+              Start="0,0"
+              End="36.625,234.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,133.511546536039" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,133.511546536039"
+                    Point2="0,137.511546536039"
+                    Point3="4,137.511546536039" />
+                  <mssgle:LineSegment
+                    End="32.625,137.511546536039" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.625,137.511546536039"
+                    Point2="36.625,137.511546536039"
+                    Point3="36.625,141.511546536039" />
+                  <mssgle:LineSegment
+                    End="36.625,234.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="584.5,178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-89,242"
+              Start="0,0"
+              End="-89,234.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,117" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,117"
+                    Point2="0,121"
+                    Point3="-4,121" />
+                  <mssgle:LineSegment
+                    End="-85,121" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-85,121"
+                    Point2="-89,121"
+                    Point3="-89,125" />
+                  <mssgle:LineSegment
+                    End="-89,234.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="730.5,187">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-210.625,233"
+              Start="0,0"
+              End="-210.625,225.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,128.397480755773" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,128.397480755773"
+                    Point2="0,132.397480755773"
+                    Point3="-4,132.397480755773" />
+                  <mssgle:LineSegment
+                    End="-206.625,132.397480755773" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-206.625,132.397480755773"
+                    Point2="-210.625,132.397480755773"
+                    Point3="-210.625,136.397480755773" />
+                  <mssgle:LineSegment
+                    End="-210.625,225.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="884,243">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-339.75,177"
+              Start="0,0"
+              End="-339.75,169.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,112.470016207455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,112.470016207455"
+                    Point2="0,116.470016207455"
+                    Point3="-4,116.470016207455" />
+                  <mssgle:LineSegment
+                    End="-335.75,116.470016207455" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-335.75,116.470016207455"
+                    Point2="-339.75,116.470016207455"
+                    Point3="-339.75,120.470016207455" />
+                  <mssgle:LineSegment
+                    End="-339.75,169.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="980.5,330">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-411.875,90"
+              Start="0,0"
+              End="-411.875,82.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.3368623676612" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,66.3368623676612"
+                    Point2="0,70.3368623676612"
+                    Point3="-4,70.3368623676612" />
+                  <mssgle:LineSegment
+                    End="-407.875,70.3368623676612" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-407.875,70.3368623676612"
+                    Point2="-411.875,70.3368623676612"
+                    Point3="-411.875,74.3368623676612" />
+                  <mssgle:LineSegment
+                    End="-411.875,82.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="168,334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="254.375,86"
+              Start="0,0"
+              End="254.375,78.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.2107795957652" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,63.2107795957652"
+                    Point2="0,67.2107795957652"
+                    Point3="4,67.2107795957652" />
+                  <mssgle:LineSegment
+                    End="250.375,67.2107795957652" />
+                  <mssgle:CubicBezierSegment
+                    Point1="250.375,67.2107795957652"
+                    Point2="254.375,67.2107795957652"
+                    Point3="254.375,71.2107795957652" />
+                  <mssgle:LineSegment
+                    End="254.375,78.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

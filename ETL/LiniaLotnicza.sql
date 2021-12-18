@@ -21,9 +21,6 @@ MERGE INTO LiniaLotnicza as TT
 					ST.[KodLiniiIATA],
 					ST.[Nazwa]
 					)
-			WHEN Not Matched By Source
-				Then
-					DELETE
 			;
 
 Drop View vETLDimLiniaLotniczaData;

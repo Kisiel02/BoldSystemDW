@@ -26,7 +26,6 @@ go
 CREATE VIEW vETLZespolyData
 AS
 SELECT
-	t1.[IdentyfikatorZespolu] as [ID],
 	t1.[NazwaZespolu] as [NazwaZespolu],
 	CASE
 		WHEN t1.IloscCzlonkowZespoluBezStazystow < 5 THEN 'Mniej niz 5 czlonkow zespolu'
@@ -54,8 +53,8 @@ MERGE INTO Zespoly as TT
 					ST.IloscStazystow,
 					1)
 			WHEN Matched
-				AND (ST.NazwaZespolu <> TT.Nazwa_Zespolu
-				OR ST.IloscCzlonkowZespoluBezStazystow <> TT.Ilosc_Czlonkow
+				AND (
+				ST.IloscCzlonkowZespoluBezStazystow <> TT.Ilosc_Czlonkow
 				OR ST.IloscStazystow <> TT.Ilosc_Stazystow)
 				THEN
 					UPDATE

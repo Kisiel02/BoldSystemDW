@@ -1,6 +1,8 @@
 USE BoldSystemDW
 GO
 
+DELETE FROM dbo.Awarie;
+
 INSERT INTO dbo.Awarie
 SELECT a
 FROM

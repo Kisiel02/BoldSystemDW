@@ -23,7 +23,7 @@ While @Hour <= 23
 							  when @Time < cast('11:59:59' AS TIME) THEN 'pomiędzy 8 a 12'
 							  when @Time < cast('15:59:59' AS TIME) THEN 'pomiędzy 12 a 16'
 							  when @Time < cast('19:59:59' AS TIME) THEN 'pomiędzy 16 a 20'
-							  ELSE 'pomi�dzy 20 a 24(0)'
+							  ELSE 'pomiędzy 20 a 24(0)'
 						 end) as varchar(40))
 					);  
 					Set @Minute = @Minute + 1;
