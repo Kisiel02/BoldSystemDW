@@ -19,9 +19,6 @@ MERGE INTO Koordynatorzy as TT
 					Values (
 					ST.[NumerPaszportu]
 					)
-			WHEN Not Matched By Source
-				Then
-					DELETE
 			;
 
 Drop View vETLDimKoordynatorzyData;

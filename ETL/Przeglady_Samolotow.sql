@@ -18,6 +18,7 @@ FROM
 	dbo.BoldSystemTemp AS TMP ON ZW.Nazwa_Zespolu = TMP.NazwaZespolu
 
 GO
+
 CREATE VIEW vETLFPrzegladySamolotow
 AS
 SELECT	
@@ -53,36 +54,6 @@ FROM
 	JOIN dbo.Czas AS CPW ON 
 		CPW.Godzina = DATEPART(HOUR, ST1.StartPrzegladu) AND
 		CPW.Minuta = DATEPART(MINUTE, ST1.StartPrzegladu)
-	JOIN dbo.Koordynatorzy as KW ON KW.Numer_paszportu = ST4.NumerPaszportu
-	JOIN dbo.Samoloty as SW ON SW.Model = ST2.ModelSamolotu AND
-		SW.Rodzaj_Samolotu = 
-		CASE
-			WHEN ST2.RodzajSamolotu = 0 THEN 'Pasazerski'
-			ELSE 'Transportowy'
-		END AND SW.Wiek = 
-		CASE
-			WHEN YEAR(GETDATE()) - ST2.RokProdukcji < 5 THEN 'Nowy samolot'
-			WHEN YEAR(GETDATE()) - ST2.RokProdukcji < 25 THEN 'Samolot o srednim wieku'
-			ELSE 'Stary samolot'
-		END AND SW.ID_Linii_Lotniczej = 
-			(SELECT ID_Linii_Lotniczej FROM dbo.LiniaLotnicza AS LL
-				WHERE LL.Kod_Linii_IATA = ST3.KodLiniiIATA AND
-				LL.Nazwa = ST3.Nazwa)
-	JOIN dbo.Warunki_Pogodowe AS WPW ON WPW.Czy_Opady = 
-		CASE
-			WHEN ST1.CzyOpady = 1 THEN 'Opady wystapily'
-			ELSE 'Brak opadow'
-		END AND WPW.Temperatura =
-		CASE
-			WHEN ST1.Temperatura < 5 THEN 'Niska temperatura'
-			WHEN ST1.Temperatura <= 20 THEN 'Srednia temperatura'
-			ELSE 'Wysoka temperatura'
-		END AND WPW.Predkosc_Wiatru = 
-		CASE
-			WHEN ST1.Wiatr < 20 THEN 'Mala predkosc wiatru'
-			WHEN ST1.Wiatr <= 50 THEN 'Srednia predkosc wiatru'
-			ELSE 'Duza predkosc wiatru'
-		END	
 	JOIN dbo.Awarie AS AW ON AW.Krytycznosc = 
 	CASE
 		WHEN ST1.Awaria = 0 THEN 'Brak awarii'
@@ -91,12 +62,44 @@ FROM
 		WHEN ST1.Awaria = 3 THEN 'Duza awaria'
 		ELSE 'GIGA AWARIA'
 	END
+	JOIN dbo.Samoloty as SW ON SW.Model = ST2.ModelSamolotu AND
+	SW.Rodzaj_Samolotu = 
+	CASE
+		WHEN ST2.RodzajSamolotu = 0 THEN 'Pasazerski'
+		ELSE 'Transportowy'
+	END AND SW.Wiek = 
+	CASE
+		WHEN YEAR(GETDATE()) - ST2.RokProdukcji < 5 THEN 'Nowy samolot'
+		WHEN YEAR(GETDATE()) - ST2.RokProdukcji < 25 THEN 'Samolot o srednim wieku'
+		ELSE 'Stary samolot'
+	END AND SW.ID_Linii_Lotniczej = 
+		(SELECT ID_Linii_Lotniczej FROM dbo.LiniaLotnicza AS LL
+			WHERE LL.Kod_Linii_IATA = ST3.KodLiniiIATA AND
+			LL.Nazwa = ST3.Nazwa)
+	JOIN dbo.Warunki_Pogodowe AS WPW ON WPW.Czy_Opady = 
+	CASE
+		WHEN ST1.CzyOpady = 1 THEN 'Opady wystapily'
+		ELSE 'Brak opadow'
+	END AND WPW.Temperatura =
+	CASE
+		WHEN ST1.Temperatura < 5 THEN 'Niska temperatura'
+		WHEN ST1.Temperatura <= 20 THEN 'Srednia temperatura'
+		ELSE 'Wysoka temperatura'
+	END AND WPW.Predkosc_Wiatru = 
+	CASE
+		WHEN ST1.Wiatr < 20 THEN 'Mala predkosc wiatru'
+		WHEN ST1.Wiatr <= 50 THEN 'Srednia predkosc wiatru'
+		ELSE 'Duza predkosc wiatru'
+	END	
+	JOIN dbo.Koordynatorzy as KW ON KW.Numer_paszportu = ST4.NumerPaszportu
 	JOIN zespolyTmp AS ZW ON 
 		ZW.IdentyfikatorZespolu = ST1.IdentyfikatorZespolu
 	WHERE ZW.Aktualnosc = 1
 	) as X
-	go
-	SELECT * FROM vETLFPrzegladySamolotow
+
+GO
+
+SELECT * FROM vETLFPrzegladySamolotow;
 	
 GO
 	MERGE INTO PrzegladySamolotow AS TT
@@ -116,8 +119,8 @@ GO
 					ID_Awarii,
 					ID_Samolotu,
 					ID_Zespolu,
-					ID_Koordynatora,
 					ID_Warunkow_Pogodowych,
+					ID_Koordynatora,
 					Opoznienie,
 					CzasTrwaniaPrzegladu);
 					

@@ -1,7 +1,8 @@
 use BoldSystemDW
 go
 
-DELETE FROM dbo.Czas;
+IF(NOT EXISTS(SELECT 1 FROM dbo.Czas))
+BEGIN
 
 -- pomocnicze zmienne
 Declare @Hour INTEGER = 0;
@@ -31,6 +32,7 @@ While @Hour <= 23
 			Set @Hour = @Hour + 1;
 			Set @Minute =  0;
 	End
-GO
+
+END
 
 SELECT * FROM dbo.Czas
