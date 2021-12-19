@@ -1,7 +1,8 @@
 use BoldSystemDW
 go
 
-DELETE FROM Data_przegladu;
+IF(NOT EXISTS(SELECT 1 FROM dbo.Data_przegladu))
+BEGIN
 
 -- pomocnicze zmienne
 Declare @StartDate date; 
@@ -25,4 +26,5 @@ While @DateInProcess <= @EndDate
 		);  
 		Set @DateInProcess = DateAdd(d, 1, @DateInProcess);
 	End
-GO
+
+END

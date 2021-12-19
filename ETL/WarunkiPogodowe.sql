@@ -1,7 +1,8 @@
 USE BoldSystemDW
 GO
 
-DELETE FROM dbo.Warunki_Pogodowe;
+IF(NOT EXISTS(SELECT 1 FROM dbo.Warunki_Pogodowe))
+BEGIN
 
 INSERT INTO dbo.Warunki_Pogodowe
 SELECT t, w, o
@@ -17,3 +18,5 @@ FROM
 	(VALUES 
 		('Opady wystapily'),
 			('Brak opadow')) AS Czy_Opady(o);
+
+END

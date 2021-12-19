@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Populate Data"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{86079E93-DFF2-49E7-8E14-E53CFD13EACE}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{63F51002-911C-48EA-BCBF-3C3ED9B5C7A3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -154,7 +154,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Awarie"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -172,7 +172,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Czas"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -190,7 +190,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Daty"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -208,7 +208,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Koordynatorzy"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -226,7 +226,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Linia Lotnicza"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -262,7 +262,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Samoloty"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -280,7 +280,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Warunki pogodowe"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -298,7 +298,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Zespoly"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -387,10 +387,6 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="147,42"
-          Id="Package\Koordynatorzy"
-          TopLeft="200,144" />
-        <NodeLayout
           Size="111,42"
           Id="Package\Awarie"
           TopLeft="379,136" />
@@ -403,13 +399,29 @@
           Id="Package\Daty"
           TopLeft="534,136" />
         <NodeLayout
+          Size="147,42"
+          Id="Package\Koordynatorzy"
+          TopLeft="200,144" />
+        <NodeLayout
           Size="142,42"
           Id="Package\Linia Lotnicza"
           TopLeft="30,164" />
         <NodeLayout
+          Size="203,61"
+          Id="Package\Przeglady_Samolotow"
+          TopLeft="394,420" />
+        <NodeLayout
           Size="122,42"
           Id="Package\Samoloty"
           TopLeft="107,292" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Warunki pogodowe"
+          TopLeft="799,201" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\Zespoly"
+          TopLeft="923,288" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="101,206">
@@ -444,18 +456,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Warunki pogodowe"
-          TopLeft="799,201" />
-        <NodeLayout
-          Size="115,42"
-          Id="Package\Zespoly"
-          TopLeft="923,288" />
-        <NodeLayout
-          Size="203,61"
-          Id="Package\Przeglady_Samolotow"
-          TopLeft="394,420" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="273.5,186">
