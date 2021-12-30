@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Populate Data"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{63F51002-911C-48EA-BCBF-3C3ED9B5C7A3}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{F518F1E2-CFC8-406D-86CF-921578513FD9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -76,6 +76,18 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=localhost;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost 1]"
+      DTS:CreationName="MSOLAP100"
+      DTS:DTSID="{94588CCE-3C25-4A25-A76E-E8917F1F2530}"
+      DTS:ObjectName="localhost 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Data Source=localhost;PROVIDER=MSOLAP;Impersonation Level=Impersonate;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -146,6 +158,22 @@
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
+      DTS:refId="Package\Analysis Services Processing Task"
+      DTS:CreationName="Microsoft.DTSProcessingTask"
+      DTS:Description="Analysis Services Processing Task"
+      DTS:DTSID="{A5F40C14-5913-4C35-81C6-CA139D56FCF0}"
+      DTS:ExecutableType="Microsoft.DTSProcessingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Analysis Services Processing Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ASProcessingData
+          ConnectionName="localhost 1"
+          ProcessingCommands="&lt;Batch xmlns=&quot;http://schemas.microsoft.com/analysisservices/2003/engine&quot;&gt;&#xA;  &lt;Process xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:ddl2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2&quot; xmlns:ddl2_2=&quot;http://schemas.microsoft.com/analysisservices/2003/engine/2/2&quot; xmlns:ddl100_100=&quot;http://schemas.microsoft.com/analysisservices/2008/engine/100/100&quot; xmlns:ddl200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200&quot; xmlns:ddl200_200=&quot;http://schemas.microsoft.com/analysisservices/2010/engine/200/200&quot; xmlns:ddl300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300&quot; xmlns:ddl300_300=&quot;http://schemas.microsoft.com/analysisservices/2011/engine/300/300&quot; xmlns:ddl400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400&quot; xmlns:ddl400_400=&quot;http://schemas.microsoft.com/analysisservices/2012/engine/400/400&quot; xmlns:ddl500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500&quot; xmlns:ddl500_500=&quot;http://schemas.microsoft.com/analysisservices/2013/engine/500/500&quot;&gt;&#xA;    &lt;Object&gt;&#xA;      &lt;DatabaseID&gt;BoldSystemDW&lt;/DatabaseID&gt;&#xA;    &lt;/Object&gt;&#xA;    &lt;Type&gt;ProcessFull&lt;/Type&gt;&#xA;    &lt;WriteBackTableCreation&gt;UseExisting&lt;/WriteBackTableCreation&gt;&#xA;  &lt;/Process&gt;&#xA;&lt;/Batch&gt;" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Awarie"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -154,7 +182,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Awarie"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -172,7 +200,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Czas"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -190,7 +218,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Daty"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -208,7 +236,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Koordynatorzy"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -226,7 +254,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Linia Lotnicza"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -262,7 +290,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Samoloty"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -373,6 +401,14 @@
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 7"
       DTS:To="Package\Przeglady_Samolotow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{E6B065E9-6FD5-45EB-BBBF-AE58E9EC709D}"
+      DTS:From="Package\Przeglady_Samolotow"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Analysis Services Processing Task" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -409,7 +445,7 @@
         <NodeLayout
           Size="203,61"
           Id="Package\Przeglady_Samolotow"
-          TopLeft="394,420" />
+          TopLeft="394,418.75" />
         <NodeLayout
           Size="122,42"
           Id="Package\Samoloty"
@@ -462,26 +498,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="173.25,234"
+              EndConnector="173.25,232.75"
               Start="0,0"
-              End="173.25,226.5">
+              End="173.25,225.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,149.977309562399" />
+                    End="0,149.154781199352" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,149.977309562399"
-                    Point2="0,153.977309562399"
-                    Point3="4,153.977309562399" />
+                    Point1="0,149.154781199352"
+                    Point2="0,153.154781199352"
+                    Point3="4,153.154781199352" />
                   <mssgle:LineSegment
-                    End="169.25,153.977309562399" />
+                    End="169.25,153.154781199352" />
                   <mssgle:CubicBezierSegment
-                    Point1="169.25,153.977309562399"
-                    Point2="173.25,153.977309562399"
-                    Point3="173.25,157.977309562399" />
+                    Point1="169.25,153.154781199352"
+                    Point2="173.25,153.154781199352"
+                    Point3="173.25,157.154781199352" />
                   <mssgle:LineSegment
-                    End="173.25,226.5" />
+                    End="173.25,225.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -496,26 +532,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="36.625,242"
+              EndConnector="36.625,240.75"
               Start="0,0"
-              End="36.625,234.5">
+              End="36.625,233.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,133.511546536039" />
+                    End="0,132.801259622113" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,133.511546536039"
-                    Point2="0,137.511546536039"
-                    Point3="4,137.511546536039" />
+                    Point1="0,132.801259622113"
+                    Point2="0,136.801259622113"
+                    Point3="4,136.801259622113" />
                   <mssgle:LineSegment
-                    End="32.625,137.511546536039" />
+                    End="32.625,136.801259622113" />
                   <mssgle:CubicBezierSegment
-                    Point1="32.625,137.511546536039"
-                    Point2="36.625,137.511546536039"
-                    Point3="36.625,141.511546536039" />
+                    Point1="32.625,136.801259622113"
+                    Point2="36.625,136.801259622113"
+                    Point3="36.625,140.801259622113" />
                   <mssgle:LineSegment
-                    End="36.625,234.5" />
+                    End="36.625,233.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -530,26 +566,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-89,242"
+              EndConnector="-89,240.75"
               Start="0,0"
-              End="-89,234.5">
+              End="-89,233.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,117" />
+                    End="0,116.375" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,117"
-                    Point2="0,121"
-                    Point3="-4,121" />
+                    Point1="0,116.375"
+                    Point2="0,120.375"
+                    Point3="-4,120.375" />
                   <mssgle:LineSegment
-                    End="-85,121" />
+                    End="-85,120.375" />
                   <mssgle:CubicBezierSegment
-                    Point1="-85,121"
-                    Point2="-89,121"
-                    Point3="-89,125" />
+                    Point1="-85,120.375"
+                    Point2="-89,120.375"
+                    Point3="-89,124.375" />
                   <mssgle:LineSegment
-                    End="-89,234.5" />
+                    End="-89,233.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -564,26 +600,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-210.625,233"
+              EndConnector="-210.625,231.75"
               Start="0,0"
-              End="-210.625,225.5">
+              End="-210.625,224.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,128.397480755773" />
+                    End="0,127.687193841847" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,128.397480755773"
-                    Point2="0,132.397480755773"
-                    Point3="-4,132.397480755773" />
+                    Point1="0,127.687193841847"
+                    Point2="0,131.687193841847"
+                    Point3="-4,131.687193841847" />
                   <mssgle:LineSegment
-                    End="-206.625,132.397480755773" />
+                    End="-206.625,131.687193841847" />
                   <mssgle:CubicBezierSegment
-                    Point1="-206.625,132.397480755773"
-                    Point2="-210.625,132.397480755773"
-                    Point3="-210.625,136.397480755773" />
+                    Point1="-206.625,131.687193841847"
+                    Point2="-210.625,131.687193841847"
+                    Point3="-210.625,135.687193841847" />
                   <mssgle:LineSegment
-                    End="-210.625,225.5" />
+                    End="-210.625,224.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -598,26 +634,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-339.75,177"
+              EndConnector="-339.75,175.75"
               Start="0,0"
-              End="-339.75,169.5">
+              End="-339.75,168.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,112.470016207455" />
+                    End="0,111.647487844408" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,112.470016207455"
-                    Point2="0,116.470016207455"
-                    Point3="-4,116.470016207455" />
+                    Point1="0,111.647487844408"
+                    Point2="0,115.647487844408"
+                    Point3="-4,115.647487844408" />
                   <mssgle:LineSegment
-                    End="-335.75,116.470016207455" />
+                    End="-335.75,115.647487844408" />
                   <mssgle:CubicBezierSegment
-                    Point1="-335.75,116.470016207455"
-                    Point2="-339.75,116.470016207455"
-                    Point3="-339.75,120.470016207455" />
+                    Point1="-335.75,115.647487844408"
+                    Point2="-339.75,115.647487844408"
+                    Point3="-339.75,119.647487844408" />
                   <mssgle:LineSegment
-                    End="-339.75,169.5" />
+                    End="-339.75,168.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -632,26 +668,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-411.875,90"
+              EndConnector="-411.875,88.75"
               Start="0,0"
-              End="-411.875,82.5">
+              End="-411.875,81.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,66.3368623676612" />
+                    End="0,65.3599615014437" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,66.3368623676612"
-                    Point2="0,70.3368623676612"
-                    Point3="-4,70.3368623676612" />
+                    Point1="0,65.3599615014437"
+                    Point2="0,69.3599615014437"
+                    Point3="-4,69.3599615014437" />
                   <mssgle:LineSegment
-                    End="-407.875,70.3368623676612" />
+                    End="-407.875,69.3599615014437" />
                   <mssgle:CubicBezierSegment
-                    Point1="-407.875,70.3368623676612"
-                    Point2="-411.875,70.3368623676612"
-                    Point3="-411.875,74.3368623676612" />
+                    Point1="-407.875,69.3599615014437"
+                    Point2="-411.875,69.3599615014437"
+                    Point3="-411.875,73.3599615014437" />
                   <mssgle:LineSegment
-                    End="-411.875,82.5" />
+                    End="-411.875,81.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -666,26 +702,64 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="254.375,86"
+              EndConnector="254.375,84.75"
               Start="0,0"
-              End="254.375,78.5">
+              End="254.375,77.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,63.2107795957652" />
+                    End="0,62.2338787295476" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,63.2107795957652"
-                    Point2="0,67.2107795957652"
-                    Point3="4,67.2107795957652" />
+                    Point1="0,62.2338787295476"
+                    Point2="0,66.2338787295476"
+                    Point3="4,66.2338787295476" />
                   <mssgle:LineSegment
-                    End="250.375,67.2107795957652" />
+                    End="250.375,66.2338787295476" />
                   <mssgle:CubicBezierSegment
-                    Point1="250.375,67.2107795957652"
-                    Point2="254.375,67.2107795957652"
-                    Point3="254.375,71.2107795957652" />
+                    Point1="250.375,66.2338787295476"
+                    Point2="254.375,66.2338787295476"
+                    Point3="254.375,70.2338787295476" />
                   <mssgle:LineSegment
-                    End="254.375,78.5" />
+                    End="254.375,77.25" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Analysis Services Processing Task"
+          TopLeft="611.25,603.75" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="495.5,479.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="234.25,124"
+              Start="0,0"
+              End="234.25,116.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,58"
+                    Point2="0,62"
+                    Point3="4,62" />
+                  <mssgle:LineSegment
+                    End="230.25,62" />
+                  <mssgle:CubicBezierSegment
+                    Point1="230.25,62"
+                    Point2="234.25,62"
+                    Point3="234.25,66" />
+                  <mssgle:LineSegment
+                    End="234.25,116.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -697,5 +771,9 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <ConnectionManager
+    design-time-name="Package.ConnectionManagers[localhost 1]">
+    <ProjectReferenceName></ProjectReferenceName>
+  </ConnectionManager>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

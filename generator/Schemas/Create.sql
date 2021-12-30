@@ -13,7 +13,7 @@ CREATE TABLE LiniaLotnicza
 (
     ID INTEGER IDENTITY(1,1) PRIMARY KEY,
 	KodLiniiIATA varchar(4),
-	Nazwa varchar(30),
+	Nazwa varchar(50),
 )
 GO
 
