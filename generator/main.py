@@ -26,18 +26,18 @@ linieLotnicze = "LinieLotnicze.bulk"
 liczbaLini = 180
 
 koordynatorzy = "Koordynatorzy.bulk"
-liczbaKoordynatorow = 180
+liczbaKoordynatorow = 10
 
 samoloty = "Samoloty.bulk"
 liczbaSamolotow = 180
 
 przeglady = "Przeglady.bulk"
-liczbaPrzegladow = 120
-dateStart = datetime.datetime.strptime('2021-09-02', '%Y-%m-%d')
-dateEnd = datetime.datetime.strptime('2021-12-01', '%Y-%m-%d')
+liczbaPrzegladow = 2000
+dateStart = datetime.datetime.strptime('2021-9-01', '%Y-%m-%d')
+dateEnd = datetime.datetime.strptime('2021-9-30', '%Y-%m-%d')
 
 zespoly = "Zespoly.csv"
-liczbaZespolow = 140
+liczbaZespolow = 20
 
 # linie lotnicze
 file = open(linieLotnicze, "a")

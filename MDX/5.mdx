@@ -1,0 +1,7 @@
+SELECT 
+	[Zespoly].[Ilosc Stazystow].Members
+	ON ROWS,
+	{ [Data Przegladu].[Od roku do dnia].[Rok].[2021].[listopad], [Data Przegladu].[Od roku do dnia].[Rok].[2021].[paŸdziernik]} 
+	ON COLUMNS
+ FROM [Bold System DW]
+ WHERE [Measures].[Iloœæ przeprowadzonych przegl¹dów]

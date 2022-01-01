@@ -1,0 +1,10 @@
+SELECT 
+	[Zespoly].[Nazwa Zespolu].&[e1a93aa0-00ec-4d96-b075-e11fec1a95c8]
+	ON ROWS,
+	{ 
+	([Data Przegladu].[Od roku do dnia].[Rok].[2021].[listopad], [Samoloty].[Model].&[Airbus A220]),
+	([Data Przegladu].[Od roku do dnia].[Rok].[2021].[paüdziernik], [Samoloty].[Model].&[Airbus A220])
+	} 
+	ON COLUMNS
+ FROM [Bold System DW]
+ WHERE ([Measures].[Srednia czas trwania przegladu],[Awarie].[Krytycznosc].&[Brak awarii])

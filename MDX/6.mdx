@@ -1,0 +1,9 @@
+// NIE DZIALA DOBRZE	
+SELECT 
+	{ 
+	( [Zespoly].[Nazwa Zespolu].Members )
+	}
+	ON ROWS,
+	{ TOPCOUNT([Samoloty].[Model].Members,1,[Measures].[Czas Trwania Przegladow]) } 
+	ON COLUMNS
+ FROM [Bold System DW]
