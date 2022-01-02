@@ -1,0 +1,4 @@
+SELECT
+NONEMPTY(([Linia Lotnicza].[Kod Linii IATA].Children, [Samoloty].[Model].Children)) ON ROWS,
+[Measures].[Iloœæ przeprowadzonych przegl¹dów] ON COLUMNS
+FROM [Bold System DW]

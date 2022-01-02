@@ -1,0 +1,15 @@
+SELECT 
+	{
+	([Data Przegladu].[Od roku do dnia].[Rok].[2021].[paŸdziernik], 
+	TOPCOUNT([Zespoly].[Nazwa Zespolu].Children, 3, ([Data Przegladu].[Od roku do dnia].[Rok].[2021].[paŸdziernik],[Measures].[Iloœæ przeprowadzonych przegl¹dów]))
+	),
+	([Data Przegladu].[Od roku do dnia].[Rok].[2021].[listopad], 
+	TOPCOUNT([Zespoly].[Nazwa Zespolu].Children, 3, ([Data Przegladu].[Od roku do dnia].[Rok].[2021].[listopad],[Measures].[Iloœæ przeprowadzonych przegl¹dów]))
+	)
+	}
+	ON ROWS,
+	{ 
+	[Measures].[Iloœæ przeprowadzonych przegl¹dów]
+	} 
+	ON COLUMNS
+ FROM [Bold System DW]

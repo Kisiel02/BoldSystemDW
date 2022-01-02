@@ -1,0 +1,14 @@
+WITH MEMBER [SUMARYCZNE PRZEGLADY] AS
+([Data Przegladu].[Od roku do dnia].[Rok].[2021].[wrzesieñ],[Measures].[Iloœæ przeprowadzonych przegl¹dów]) +
+([Data Przegladu].[Od roku do dnia].[Rok].[2021].[paŸdziernik],[Measures].[Iloœæ przeprowadzonych przegl¹dów])
+
+SELECT 
+	{
+	BOTTOMCOUNT(NONEMPTY([Zespoly].[Nazwa Zespolu].Members,[SUMARYCZNE PRZEGLADY]), 1,[SUMARYCZNE PRZEGLADY])
+	}
+	ON ROWS,
+	{ 
+	[SUMARYCZNE PRZEGLADY]
+	} 
+	ON COLUMNS
+ FROM [Bold System DW]

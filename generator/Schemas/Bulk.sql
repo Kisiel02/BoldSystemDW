@@ -27,16 +27,16 @@ SELECT * FROM Koordynatorzy
 SELECT * FROM Samoloty
 SELECT * FROM PrzegladySamolotow
 
---USE BoldSystemDW
---GO
+USE BoldSystemDW
+GO
 
---DELETE FROM PrzegladySamolotow;
---DELETE FROM Samoloty;
---DELETE FROM LiniaLotnicza;
---DELETE FROM Koordynatorzy;
---DELETE FROM Zespoly;
---DELETE FROM Awarie;
---DELETE FROM Warunki_Pogodowe;
---DELETE FROM Czas;
---DELETE FROM Data_przegladu;
+DELETE FROM PrzegladySamolotow;
+DELETE FROM Samoloty;
+DELETE FROM LiniaLotnicza;
+DELETE FROM Koordynatorzy;
+DELETE FROM Zespoly;
+DELETE FROM Awarie;
+DELETE FROM Warunki_Pogodowe;
+DELETE FROM Czas;
+DELETE FROM Data_przegladu;
 

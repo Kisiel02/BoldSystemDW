@@ -1,0 +1,6 @@
+// TO NWM JAK INACZEJ ZROBIC PODOBNIE JAK 6 I 9
+SELECT
+[Zespoly].[Nazwa Zespolu].Children ON ROWS,
+([Samoloty].[Model].Children, [Measures].[Opoznienie]) ON COLUMNS
+FROM [Bold System DW]
+WHERE ([Warunki Pogodowe].[Czy Opady].&[Opady wystapily],[Warunki Pogodowe].[Predkosc Wiatru].&[Duza predkosc wiatru])

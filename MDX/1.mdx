@@ -1,0 +1,11 @@
+WITH MEMBER [Poprzedni miesiac] AS '([Data Przegladu].[Od roku do dnia].[2021].[wrzesieñ],
+	[Measures].[Srednia czas trwania przegladu])'
+SELECT 
+	NonEmptyCrossJoin(
+	[Data Przegladu].[Od roku do dnia].[Rok].[2021].[paŸdziernik],
+	[Zespoly].[Nazwa Zespolu].Members
+	)
+	ON ROWS,
+	{ [Measures].[Srednia czas trwania przegladu], [Poprzedni miesiac] } 
+	ON COLUMNS
+ FROM [Bold System DW]
