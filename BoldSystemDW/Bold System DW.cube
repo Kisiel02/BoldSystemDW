@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e165a1ee-e62e-4942-bdca-49918c075267" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="35d9c49a-55e7-405a-9e9f-459722e4068a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Bold System DW</ID>
   <Name>Bold System DW</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="36" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10286" scrolltop="-1508" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20849" y="11748" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="36" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8295" scrolltop="-4303" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20849" y="12044" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01ee00009001b0300100065461686f6d61" />
             </font>
@@ -296,11 +296,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-10286</Value>
+      <Value>-8295</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-1508</Value>
+      <Value>-4303</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -318,167 +318,167 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="040c16a6-ff5f-4214-a632-3f1aceec0ccc">
+    <Dimension dwd:design-time-name="a41e9186-b9cb-4606-8a51-276ae752e898">
       <ID>Warunki Pogodowe</ID>
       <Name>Warunki Pogodowe</Name>
       <DimensionID>Warunki Pogodowe</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="f0f28c5e-f9ea-4809-bf6f-68b4b0ffa417">
+        <Attribute dwd:design-time-name="39f03f4c-2494-4208-b041-547472c0192e">
           <AttributeID>ID Warunkow Pogodowych</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="29fa1304-8b12-4470-b98c-1ba4f79c81f6">
+        <Attribute dwd:design-time-name="12b766b6-24c7-4599-a717-951a2e6a3352">
           <AttributeID>Temperatura</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2d783ceb-b54d-49d3-86b9-cd751999503a">
+        <Attribute dwd:design-time-name="5c3db0ae-3c58-4eb2-a24d-5e2bc18a6840">
           <AttributeID>Predkosc Wiatru</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="70c4a00b-6d97-4df2-9177-ca4eb364dc1f">
+        <Attribute dwd:design-time-name="9e80c2eb-7db2-411c-93a7-6886f57173d8">
           <AttributeID>Czy Opady</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="d5d8c668-9766-4eae-8d1c-01f74e42284e">
+    <Dimension dwd:design-time-name="f2f7582a-71fe-460a-978e-cea1f3a3a443">
       <ID>Koordynatorzy</ID>
       <Name>Koordynatorzy</Name>
       <DimensionID>Koordynatorzy</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="3c792477-026f-418e-b9c3-4cc8a82b7f21">
+        <Attribute dwd:design-time-name="506c1d9e-86ab-478c-8043-8a8ca33f06ca">
           <AttributeID>ID Koordynatora</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7b9b419b-9438-4765-a81f-e71570ca53f3">
+        <Attribute dwd:design-time-name="eeb2433d-a9db-4791-a6a1-cffd184be035">
           <AttributeID>Numer Paszportu</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="168d6d70-8d8b-4c7f-9ff6-10e5e21dceb6">
+    <Dimension dwd:design-time-name="0f838ceb-0c93-4628-bc9c-f7c7fe36aa60">
       <ID>Samoloty</ID>
       <Name>Samoloty</Name>
       <DimensionID>Samoloty</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="3ecf2da5-0023-4dd6-9be3-2ded7b99fe0a">
+        <Attribute dwd:design-time-name="d71efb62-9171-438b-90ce-0715bfc264af">
           <AttributeID>ID Samolotu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6a6df4e6-8a14-410a-8f65-f69f1ad21795">
+        <Attribute dwd:design-time-name="11349c26-eea8-4514-802a-ba8aae6d10fb">
           <AttributeID>ID Linii Lotniczej</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5312ce5b-3e31-4e71-82ee-aaeb38b944ab">
+        <Attribute dwd:design-time-name="c3c9c3c8-a45b-4dc4-b8a0-6cf098626b51">
           <AttributeID>Model</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="688a0df9-c362-4988-81d6-d14e74ec36ff">
+        <Attribute dwd:design-time-name="31e747fc-2f9a-42bb-bb20-7835ab0d74f7">
           <AttributeID>Wiek</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6247410f-462c-4390-9e8f-ce29cffb099a">
+        <Attribute dwd:design-time-name="849d3688-7013-48a5-a536-75488077ae4e">
           <AttributeID>Rodzaj Samolotu</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="87edc19b-9ef0-4c2b-901a-26d2e3ca016c">
+        <Hierarchy dwd:design-time-name="86ee3957-91bc-4b73-b2c9-4c65dabfdfa2">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="aeb396d2-bdf5-479d-8683-76e8fb1aaf77">
+    <Dimension dwd:design-time-name="94a6cd89-55d8-4188-b8dd-3f32dcc9d37d">
       <ID>Zespoly</ID>
       <Name>Zespoly</Name>
       <DimensionID>Zespoly</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="383943bb-2d24-4e82-b5c4-4888a39ae5fb">
+        <Attribute dwd:design-time-name="67ba432f-0b62-46a8-a438-91bccf6ca568">
           <AttributeID>ID Zespolu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="beb992ed-1ec1-40f8-8a3f-ac0e8fd2ac92">
+        <Attribute dwd:design-time-name="896bc53a-ec48-4e22-a3e4-3262706ca23b">
           <AttributeID>Nazwa Zespolu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d9350fce-0272-4e41-b658-330d43710536">
+        <Attribute dwd:design-time-name="6b4d704f-59a4-46a2-b432-9d73ea92ac10">
           <AttributeID>Ilosc Czlonkow</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a31e0ef0-727e-4cbd-8377-37c9040dc47b">
+        <Attribute dwd:design-time-name="8758b664-47fc-4961-8fef-ebd53256f65e">
           <AttributeID>Ilosc Stazystow</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="c0861e06-7637-4992-95d7-bbc0bd594601">
+    <Dimension dwd:design-time-name="3587bcde-77aa-4e65-822d-9b4eaa4a350a">
       <ID>Awarie</ID>
       <Name>Awarie</Name>
       <DimensionID>Awarie</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="4ccf2776-18a6-4fbb-8116-3796f6bf428f">
+        <Attribute dwd:design-time-name="d0e21dcd-443b-40ba-aa27-f02c056be1c6">
           <AttributeID>ID Awarii</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ff9ec564-6c6f-4da1-aee6-b44425cfe483">
+        <Attribute dwd:design-time-name="3304507b-6d1a-4f0e-868e-1f6e43da02a1">
           <AttributeID>Krytycznosc</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="202288ac-313b-4498-9a73-e67deb1685f0">
+    <Dimension dwd:design-time-name="c0929cca-aa8e-40e8-8119-49eebce51e3e">
       <ID>Data Przegladu</ID>
       <Name>Data Przegladu</Name>
       <DimensionID>Data Przegladu</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="72db1090-abd3-45c5-80c2-a73f9b4c0090">
+        <Attribute dwd:design-time-name="ee918106-aacf-4a72-a181-8236276dd042">
           <AttributeID>ID Daty</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ad567651-7305-4dae-b858-f65f8f4f2dff">
+        <Attribute dwd:design-time-name="f0e0709c-b583-4ce1-88dc-1cd6fa232325">
           <AttributeID>Dzien</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7b6ed5e4-00fb-4f2f-ac50-ff08ac86d88e">
+        <Attribute dwd:design-time-name="1fbf005f-1f28-4545-93a1-a265d84df4a7">
           <AttributeID>Miesiac</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d80dacee-9b97-4c46-affb-e555eeed15af">
+        <Attribute dwd:design-time-name="613affb4-d2ba-4d80-a415-83eb744cf18a">
           <AttributeID>Rok</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ad556b63-d119-4d3b-a93d-45d386fc6e89">
+        <Attribute dwd:design-time-name="dcdae0fa-ee7b-4c1c-92ab-562d74fcc2f0">
           <AttributeID>Pora Roku</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="8a8f85a8-800c-4999-b55b-a7f9a347e77f">
+        <Hierarchy dwd:design-time-name="e2f002d8-9c64-4c0f-ab2b-257a2896c693">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="532fb5e1-e858-4bca-8e70-c661c52a16fc">
+    <Dimension dwd:design-time-name="19fc77f2-44e7-45c6-b400-6f6c7ac85aee">
       <ID>Czas</ID>
       <Name>Czas</Name>
       <DimensionID>Czas</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="562411c9-6733-4ec5-8b68-39b508d4ce26">
+        <Attribute dwd:design-time-name="2a41ae47-51ed-4efd-9ab4-76c116a4da7a">
           <AttributeID>ID Czasu</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a9aab2ed-4ad6-480c-8e17-edc653ba3225">
+        <Attribute dwd:design-time-name="e24b0fed-662a-4dd8-a667-8f336cee5128">
           <AttributeID>Godzina</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9e6afcd3-b562-444d-8972-54bfff244dc8">
+        <Attribute dwd:design-time-name="6322e2c0-42b3-4dbb-85c2-348d352b288a">
           <AttributeID>Minuta</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a15aac77-a9dd-4438-bca4-b03cd7e8e904">
+        <Attribute dwd:design-time-name="828ecd56-616c-4259-9709-fab0a286980e">
           <AttributeID>Pora Dnia</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="640bf7e2-84ad-4569-8a93-56afbfc9b522">
+        <Hierarchy dwd:design-time-name="c60298c8-75e3-4e57-95b8-8fd60c28e4f0">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="eae5b75f-69d7-477a-bdf0-1139c5fb9c10">
+    <Dimension dwd:design-time-name="8c341661-07b3-4cf7-812c-5c2b208a2e1e">
       <ID>Linia Lotnicza</ID>
       <Name>Linia Lotnicza</Name>
       <DimensionID>Linia Lotnicza</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="6d7bfa4b-8d9b-49cf-b225-d914d2056d23">
+        <Attribute dwd:design-time-name="d2b6663f-f241-4cac-a703-be25e6cfc1ef">
           <AttributeID>ID Linii Lotniczej</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ebdfe29c-a702-462c-93f4-75752eaaffd7">
+        <Attribute dwd:design-time-name="09fba00f-f5a2-4936-855a-d31dd4342809">
           <AttributeID>Kod Linii IATA</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="cc06a049-73c5-4802-964c-756c4027a734">
+        <Attribute dwd:design-time-name="4091d526-7ffe-4af3-a79a-efb31e423d7c">
           <AttributeID>Nazwa</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="50545f3a-da83-4639-9cd6-efab69a68422">
+    <MeasureGroup dwd:design-time-name="5c34bad6-21e7-432b-828c-b94edda53c0e">
       <ID>Przeglady Samolotow</ID>
       <Name>Przeglady Samolotow</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -486,59 +486,59 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="e977c1c9-3ac3-4d54-915d-59297d02be6c">
+        <Measure dwd:design-time-name="cfaa2d42-9d48-46eb-b4dc-69b43eb6f025">
           <ID>Czas Trwania Przegladu</ID>
           <Name>Maksymalny czas trwania przeglądu</Name>
           <AggregateFunction>Max</AggregateFunction>
-          <Source dwd:design-time-name="c139ccbc-cee2-457b-825e-0821a0fb18e7">
+          <Source dwd:design-time-name="964ab545-5112-47cc-b258-5658abe217e1">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="59e0eb78-9ce5-49dd-a0d8-05b2ada95cce">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="35644301-276a-41ee-ad77-27750a369bd1">
               <TableID>dbo_PrzegladySamolotow</TableID>
               <ColumnID>CzasTrwaniaPrzegladu</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="f7a27244-665d-442b-8b0b-281100628bf7">
+        <Measure dwd:design-time-name="97d4d23d-8490-4a8e-9335-5db516879b2b">
           <ID>Opoznienie</ID>
           <Name>Maksymalne opóźnienie</Name>
           <AggregateFunction>Max</AggregateFunction>
-          <Source dwd:design-time-name="287571d6-1bf3-4f26-8bc6-4aca63b6f5f1">
+          <Source dwd:design-time-name="b17cca7a-950d-4f22-bda6-0e0e597e2725">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="2d1c7069-9419-44fd-a3b1-1565440fbf5f">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1da4c343-ac55-4394-a398-bcbe31417517">
               <TableID>dbo_PrzegladySamolotow</TableID>
               <ColumnID>Opoznienie</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="5ce803be-2929-4fe6-b1e4-1cab951a1098">
+        <Measure dwd:design-time-name="08fbeefc-bf46-4a82-91d7-bf7cc5afd415">
           <ID>Przeglady Samolotow Count</ID>
           <Name>Ilość przeprowadzonych przeglądów</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="d6f56ca8-0855-4435-a25f-1c29cc3a1ade">
+          <Source dwd:design-time-name="84cd8379-0a24-4e04-8ac8-35886ce319a9">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="0dceda20-151d-4cd6-b18d-1385dc7b324f">
+            <Source xsi:type="RowBinding" dwd:design-time-name="ccde1417-d507-4594-a61e-b395a136bd64">
               <TableID>dbo_PrzegladySamolotow</TableID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="08b8d9f6-128f-44c6-ab0c-e22c847b2794">
+        <Measure dwd:design-time-name="10f883bf-cad9-4b12-9380-cc41148fd58f">
           <ID>Opoznienie 1</ID>
           <Name>Opoznienie</Name>
-          <Source dwd:design-time-name="5aafb97f-93dc-48cc-bd44-fc77b1196822">
+          <Source dwd:design-time-name="792a41e9-6b4a-4442-85b7-bf7ccdad70c0">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="5b7034af-de4b-4994-a5ec-21d70e656bb6">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cb4dce32-d6de-4699-9286-9ef85c75aa78">
               <TableID>dbo_PrzegladySamolotow</TableID>
               <ColumnID>Opoznienie</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="965b01f8-f1fa-45b4-b824-c463e59a5953">
+        <Measure dwd:design-time-name="aeba0fcb-a5c6-4c62-ba08-5f8ab932cd52">
           <ID>Czas Trwania Przegladu 1</ID>
           <Name>Czas Trwania Przegladow</Name>
-          <Source dwd:design-time-name="f2d4c6b8-3f82-4876-9c33-24ce56207663">
+          <Source dwd:design-time-name="c2a310f0-ab27-44fa-ada7-ce5dd9f2672c">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="9f933a7c-183d-41ad-ab33-8cb5f7862ead">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="754a82c7-d240-4e77-911b-a8d8fc9aed66">
               <TableID>dbo_PrzegladySamolotow</TableID>
               <ColumnID>CzasTrwaniaPrzegladu</ColumnID>
             </Source>
@@ -548,16 +548,16 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4c56ac1e-93da-43cd-a9b6-b828a410bee2">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dd881cea-edaa-4cb4-8284-65f6ac3eec8a">
           <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="07434997-2b6e-432d-9d5e-4bb8dc420a92">
+            <Attribute dwd:design-time-name="8312aa55-85da-4956-97cd-2ffa0fa62af3">
               <AttributeID>ID Warunkow Pogodowych</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="c71d500d-5ced-4f69-8344-2f26236d90c1">
+                <KeyColumn dwd:design-time-name="0b5e958a-3090-401b-bddf-2c48095aa653">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4d60d206-2ca5-4c3c-95dd-708d037885a5">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5bf6a44c-ddd2-457b-8b26-f91f6da53f49">
                     <TableID>dbo_PrzegladySamolotow</TableID>
                     <ColumnID>ID_Warunkow_Pogodowych</ColumnID>
                   </Source>
@@ -567,16 +567,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="400d7b69-573c-400c-a6eb-59eaf1eef65e">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1a8c13e5-1baf-4b05-98b2-c06ca8cbed85">
           <CubeDimensionID>Data Przegladu</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="bc33abfb-2854-4990-a081-4e421b8e3106">
+            <Attribute dwd:design-time-name="e1a28435-cc9b-474c-bb2b-53b0a9b510f5">
               <AttributeID>ID Daty</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="19c5a638-3b1a-4214-8ee6-5db44ae8e452">
+                <KeyColumn dwd:design-time-name="a51059b4-a3c8-4413-b0f4-0261663461af">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff94ebe5-2bf6-4d12-bb02-e7040372d921">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fb10e78c-78f2-49f0-b342-b4129316b264">
                     <TableID>dbo_PrzegladySamolotow</TableID>
                     <ColumnID>Data_Rozpoczecia_Przegladu</ColumnID>
                   </Source>
@@ -586,16 +586,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9d3b1055-2653-43d7-a2df-d66a75b00f89">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ff01a210-f4d8-44b4-b490-cf959184de3f">
           <CubeDimensionID>Koordynatorzy</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="f588a20e-9878-4dd2-b9b4-7c98862a7d09">
+            <Attribute dwd:design-time-name="a92a1b41-fcd1-4221-8fe8-129d4c1dc155">
               <AttributeID>ID Koordynatora</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="510a789b-c04a-49f9-863b-d5cd0309ba31">
+                <KeyColumn dwd:design-time-name="e433acab-9966-4e24-af79-4eb88f6abc0c">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ceffdc13-b555-474b-b0b3-8347ff5e327d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="77c09853-c412-4b90-89af-4ba6b5f1cef1">
                     <TableID>dbo_PrzegladySamolotow</TableID>
                     <ColumnID>ID_Koordynatora</ColumnID>
                   </Source>
@@ -605,16 +605,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b0e5f440-7f45-4e33-a63e-09de7145e3be">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b0ff3999-e3d2-4566-b454-655f1c2ccbea">
           <CubeDimensionID>Czas</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="7a2f6d7f-97db-4f6e-ac42-92f4be09b568">
+            <Attribute dwd:design-time-name="9e561687-ec04-49ea-98a5-6042cc3c8d97">
               <AttributeID>ID Czasu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="1cdb19ea-6bcd-4afa-9c26-a4e3f8951070">
+                <KeyColumn dwd:design-time-name="4e754e5f-4be5-4f91-bfad-810f47b7ff0e">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6408f270-d110-46af-851d-e536b7a452a8">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d61ee2da-0a63-40b5-92db-a7073440d951">
                     <TableID>dbo_PrzegladySamolotow</TableID>
                     <ColumnID>Czas_Rozpoczecia_Przegladu</ColumnID>
                   </Source>
@@ -624,16 +624,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a441e67b-d69f-4384-9dcf-c453381e5050">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="36e4788a-9410-4653-b7fc-77171d92c739">
           <CubeDimensionID>Samoloty</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="dd4f5e94-41dc-4555-abf1-c068b7d56216">
+            <Attribute dwd:design-time-name="bdcdf1c5-9038-47f3-a87b-fa144b4ef824">
               <AttributeID>ID Samolotu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="bad45d12-4908-4215-8d66-33d2efdfac1e">
+                <KeyColumn dwd:design-time-name="5eaa4ba7-84cd-49cf-9cd0-67298085f785">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="eb12d9c9-ff4f-4e1d-92fb-6640e47e72ce">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="297260af-a661-4ff0-bd5e-20ba71492af3">
                     <TableID>dbo_PrzegladySamolotow</TableID>
                     <ColumnID>ID_Samolotu</ColumnID>
                   </Source>
@@ -643,16 +643,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7c9771bc-2d9d-4906-9c74-ebdbc2549257">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="51f00321-1c41-4684-9bbd-36118a7636e9">
           <CubeDimensionID>Zespoly</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="81672736-436a-421b-b574-b5c8771cd798">
+            <Attribute dwd:design-time-name="5bf0c2f0-4578-451f-a581-2f14cb959c56">
               <AttributeID>ID Zespolu</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="5adb9e2b-b28b-417b-b0f7-0981a576c2b2">
+                <KeyColumn dwd:design-time-name="3f5d1599-718c-4638-ac6a-2ee1c50f786e">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aa6a9f14-85f7-4e60-93ea-8a5fb3052778">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="416eb6fd-e87c-4881-9210-66abdb06cd2f">
                     <TableID>dbo_PrzegladySamolotow</TableID>
                     <ColumnID>ID_Zespolu</ColumnID>
                   </Source>
@@ -662,16 +662,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="92a06094-b152-46df-83f1-232f8085886a">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="740219d4-4f41-4393-9106-d25efca66c88">
           <CubeDimensionID>Awarie</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="5ed3eb40-01d0-4fc6-83ae-b3944a3be5e3">
+            <Attribute dwd:design-time-name="c473c31c-4f05-4bbe-972a-ec23ade6d570">
               <AttributeID>ID Awarii</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="385a9621-c539-4981-908e-98b0c4168a20">
+                <KeyColumn dwd:design-time-name="27f9ae54-e1eb-4182-b1e7-abf8c9e34b70">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e92e23ea-c2a6-48e0-b04a-a22fba02a819">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f6d2fabc-1d8c-4703-887a-317723d28d3d">
                     <TableID>dbo_PrzegladySamolotow</TableID>
                     <ColumnID>ID_Awarii</ColumnID>
                   </Source>
@@ -681,10 +681,10 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3e32ea91-1402-4cd9-96d7-f7ecc1b29042">
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="bd0ac965-e2f6-4ad3-b350-ab7de3c13ad9">
           <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="657cb84e-c3f7-48d7-9ec9-cb9c2afe377b">
+            <Attribute dwd:design-time-name="3776f887-78f4-4e0e-bcd4-db935f44ed24">
               <AttributeID>ID Linii Lotniczej</AttributeID>
               <Type>Granularity</Type>
             </Attribute>
@@ -698,11 +698,11 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="06627ada-e848-462c-8665-df2d234a8006">
+  <Source dwd:design-time-name="98a58df4-7d50-4d39-9dec-ad3ddd5df45f">
     <DataSourceViewID>Bold System DW</DataSourceViewID>
   </Source>
   <MdxScripts>
-    <MdxScript dwd:design-time-name="09a2a2e4-a79e-4606-9a11-c688593fe695">
+    <MdxScript dwd:design-time-name="b03a8f0a-1c8d-47e7-b99f-233b5cd85997">
       <ID>MdxScript</ID>
       <Name>MdxScript</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -714,9 +714,9 @@ The CALCULATE command controls the aggregation of leaf cells in the cube.
 If the CALCULATE command is deleted or modified, the data within the cube is affected.
 You should edit this command only if you manually specify how the cube is aggregated.
 */
-CALCULATE;  CREATE MEMBER CURRENTCUBE.[Measures].[Srednie opoznienie]
+CALCULATE;   CREATE MEMBER CURRENTCUBE.[Measures].[Srednie opoznienie]
  AS SUM([Measures].[Opoznienie]) / [Measures].[Ilość przeprowadzonych przeglądów], 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Przeglady Samolotow';     
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Przeglady Samolotow';      
  
 CREATE MEMBER CURRENTCUBE.[Measures].[Srednia czas trwania przegladu]
  AS SUM([Measures].[Czas Trwania Przegladow]) / [Measures].[Ilość przeprowadzonych przeglądów], 
@@ -726,17 +726,33 @@ VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Przeglady Samolotow'; </Text>
     </MdxScript>
   </MdxScripts>
   <Kpis>
-    <Kpi dwd:design-time-name="8876857d-6a94-4b9d-b9c9-5e93fc64f04b">
+    <Kpi dwd:design-time-name="55965116-3708-451f-b222-d7aa56d52385">
       <ID>KPI</ID>
-      <Name>SredniCzasTrwaniaPrzegladu</Name>
+      <Name>ZmniejszenieSredniegoCzasuTrwaniaPrzegladu</Name>
       <AssociatedMeasureGroupID>Przeglady Samolotow</AssociatedMeasureGroupID>
       <Value>[Measures].[Srednia czas trwania przegladu]</Value>
-      <Goal>(KPIVALUE("SredniCzasTrwaniaPrzegladu"), PARALLELPERIOD(
+      <Goal>(KPIVALUE("ZmniejszenieSredniegoCzasuTrwaniaPrzegladu"), PARALLELPERIOD(
 [Data Przegladu].[Od roku do dnia].[Rok], 1,
 [Data Przegladu].[Od roku do dnia].CurrentMember))
  * 0.95</Goal>
-      <Status>IIF(KPIVALUE("SredniCzasTrwaniaPrzegladu") &lt; KPIGOAL("SredniCzasTrwaniaPrzegladu"),1 ,-1)</Status>
-      <Trend>IIF(KPIVALUE("SredniCzasTrwaniaPrzegladu") &gt; (KPIVALUE("SredniCzasTrwaniaPrzegladu"), PARALLELPERIOD
+      <Status>IIF(KPIVALUE("ZmniejszenieSredniegoCzasuTrwaniaPrzegladu") &lt; KPIGOAL("ZmniejszenieSredniegoCzasuTrwaniaPrzegladu"),1 ,-1)</Status>
+      <Trend>IIF(KPIVALUE("ZmniejszenieSredniegoCzasuTrwaniaPrzegladu") &gt; (KPIVALUE("ZmniejszenieSredniegoCzasuTrwaniaPrzegladu"), PARALLELPERIOD
+([Data Przegladu].[Od roku do dnia].[Miesiac], 1, [Data Przegladu].[Od roku do dnia].CurrentMember)),1, -1
+)</Trend>
+      <TrendGraphic>Standard Arrow</TrendGraphic>
+      <StatusGraphic>Gauge - Descending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="687c3267-5a6a-4d5f-ad64-97020a9c9d52">
+      <ID>KPI 1</ID>
+      <Name>ZmniejszenieŚredniegoOpoznienia</Name>
+      <AssociatedMeasureGroupID>Przeglady Samolotow</AssociatedMeasureGroupID>
+      <Value>[Measures].[Srednie opoznienie]</Value>
+      <Goal>(KPIVALUE("ZmniejszenieŚredniegoOpoznienia"), PARALLELPERIOD(
+[Data Przegladu].[Od roku do dnia].[Rok], 1,
+[Data Przegladu].[Od roku do dnia].CurrentMember))
+ * 0.97</Goal>
+      <Status>IIF(KPIVALUE("ZmniejszenieŚredniegoOpoznienia") &lt; KPIGOAL("ZmniejszenieŚredniegoOpoznienia"),1 ,-1)</Status>
+      <Trend>IIF(KPIVALUE("ZmniejszenieŚredniegoOpoznienia") &gt; (KPIVALUE("ZmniejszenieŚredniegoOpoznienia"), PARALLELPERIOD
 ([Data Przegladu].[Od roku do dnia].[Miesiac], 1, [Data Przegladu].[Od roku do dnia].CurrentMember)),1, -1
 )</Trend>
       <TrendGraphic>Standard Arrow</TrendGraphic>
