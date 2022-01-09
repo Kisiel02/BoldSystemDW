@@ -1,25 +1,1281 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b9dcccbe-ac34-4755-9ea0-ef1c75ae209d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a2db19cf-bb2b-47e6-a8a2-ded1174c5543" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Bold System DW</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Przeglady Samolotow</ID>
       <Partitions>
-        <Partition dwd:design-time-name="d7da512d-b6a0-4684-b997-7311b0efbea2">
+        <Partition dwd:design-time-name="3020014a-714c-402d-8a4c-881fec26a989">
           <ID>Przeglady Samolotow</ID>
           <Name>Przeglady Samolotow</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ad388460-d829-4b95-9640-d329c9a59fd9">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4629510c-9f0b-4397-b141-2f7311e62508">
             <DataSourceViewID>Bold System DW</DataSourceViewID>
             <TableID>dbo_PrzegladySamolotow</TableID>
           </Source>
-          <StorageMode>Molap</StorageMode>
+          <StorageMode>Holap</StorageMode>
           <CurrentStorageMode>Molap</CurrentStorageMode>
           <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="bdd5a9fe-f3c1-4d79-a965-97eb0dce1fb0">
+            <SilenceInterval>PT0S</SilenceInterval>
+            <Latency>PT0S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Enabled>true</Enabled>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d9d5b9de-5259-4855-8f2b-a4596d060ac4" />
+          </ProactiveCaching>
+          <EstimatedRows>984746</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
         </Partition>
       </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2022-01-05T20:57:40.61Z</CreatedTimestamp>
+          <LastSchemaUpdate>2022-01-05T20:57:40.61Z</LastSchemaUpdate>
+          <EstimatedRows>984746</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Warunkow Pogodowych</AttributeID>
+                  <EstimatedCount>18</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Temperatura</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Predkosc Wiatru</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Czy Opady</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Data Przegladu</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Daty</AttributeID>
+                  <EstimatedCount>8766</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Dzien</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Miesiac</AttributeID>
+                  <EstimatedCount>12</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Rok</AttributeID>
+                  <EstimatedCount>24</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Pora Roku</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Koordynatora</AttributeID>
+                  <EstimatedCount>40</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Numer Paszportu</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Czas</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Czasu</AttributeID>
+                  <EstimatedCount>1440</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Godzina</AttributeID>
+                  <EstimatedCount>24</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Minuta</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Pora Dnia</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Samoloty</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Samolotu</AttributeID>
+                  <EstimatedCount>400</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Linii Lotniczej</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Model</AttributeID>
+                  <EstimatedCount>119</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Wiek</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Rodzaj Samolotu</AttributeID>
+                  <EstimatedCount>2</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Zespoly</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Zespolu</AttributeID>
+                  <EstimatedCount>40</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nazwa Zespolu</AttributeID>
+                  <EstimatedCount>40</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Ilosc Czlonkow</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Ilosc Stazystow</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Awarie</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Awarii</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Krytycznosc</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Linii Lotniczej</AttributeID>
+                  <EstimatedCount>150</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Kod Linii IATA</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Nazwa</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Linii Lotniczej</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Warunkow Pogodowych</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Godzina</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Warunkow Pogodowych</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rok</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Czasu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 6</ID>
+              <Name>Aggregation 6</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rok</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Godzina</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 7</ID>
+              <Name>Aggregation 7</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Warunkow Pogodowych</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Zespolu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 8</ID>
+              <Name>Aggregation 8</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Warunkow Pogodowych</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Koordynatora</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 9</ID>
+              <Name>Aggregation 9</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Koordynatora</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Zespolu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation a</ID>
+              <Name>Aggregation a</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rok</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Zespolu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation b</ID>
+              <Name>Aggregation b</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rok</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Koordynatora</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation c</ID>
+              <Name>Aggregation c</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Godzina</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Zespolu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation d</ID>
+              <Name>Aggregation d</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Koordynatora</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Godzina</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation e</ID>
+              <Name>Aggregation e</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Warunkow Pogodowych</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rodzaj Samolotu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Linii Lotniczej</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation f</ID>
+              <Name>Aggregation f</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 10</ID>
+              <Name>Aggregation 10</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Godzina</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Linii Lotniczej</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 11</ID>
+              <Name>Aggregation 11</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rok</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Linii Lotniczej</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 12</ID>
+              <Name>Aggregation 12</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Warunkow Pogodowych</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 13</ID>
+              <Name>Aggregation 13</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rok</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Zespolu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 14</ID>
+              <Name>Aggregation 14</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Rok</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Koordynatora</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 15</ID>
+              <Name>Aggregation 15</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Godzina</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Zespolu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 16</ID>
+              <Name>Aggregation 16</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Koordynatora</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Godzina</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Awarii</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 17</ID>
+              <Name>Aggregation 17</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Koordynatora</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Linii Lotniczej</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 18</ID>
+              <Name>Aggregation 18</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>Warunki Pogodowe</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Data Przegladu</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Koordynatorzy</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Czas</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Samoloty</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Zespoly</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Zespolu</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Awarie</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Linia Lotnicza</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Linii Lotniczej</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
     </MeasureGroup>
   </MeasureGroups>
 </Cube>

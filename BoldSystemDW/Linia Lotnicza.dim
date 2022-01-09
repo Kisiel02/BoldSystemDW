@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ee3e00f1-ecc1-414e-a215-7b97be679f3c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="19109a3e-c8b4-44aa-a894-5fee9c63b4d8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Linia Lotnicza</ID>
   <Name>Linia Lotnicza</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -42,37 +42,38 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dd1564ce-bb02-4485-9fbc-67597debb839">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="c8faee6b-fa50-428b-bb06-9e2b40cf0e15">
     <DataSourceViewID>Bold System DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="e99ca34c-01b4-43e7-9385-fa817a7bd30e">
+  <ErrorConfiguration dwd:design-time-name="9e9d71f7-9f2d-4927-abf2-d1efcf5d4f4a">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="fe2ea6d5-dcb6-48a6-9b83-e1acc0378547">
+    <Attribute dwd:design-time-name="d0ac68e9-6617-4652-adb7-c1cc12736d3e">
       <ID>ID Linii Lotniczej</ID>
       <Name>ID Linii Lotniczej</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>150</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="abe4e03e-33d2-426b-90e2-7397e29c5ced">
+        <KeyColumn dwd:design-time-name="b45ef448-61f7-4647-98f6-2d24aa87e3a0">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b664a6d-4344-4280-8d56-3f953cee4d53">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3306378b-e941-40e0-a5ad-6dede6cd74fc">
             <TableID>dbo_LiniaLotnicza</TableID>
             <ColumnID>ID_Linii_Lotniczej</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="88674574-4526-4e76-8991-afea642e8174">
+        <AttributeRelationship dwd:design-time-name="33f8c0f4-efa7-4679-b0be-879ae8320d50">
           <AttributeID>Kod Linii IATA</AttributeID>
           <Name>Kod Linii IATA</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="bc0a3739-d8bb-4a36-812a-a76ede0f0c34">
+        <AttributeRelationship dwd:design-time-name="b2d311bf-24aa-4b5f-8cc9-053a2e9f12da">
           <AttributeID>Nazwa</AttributeID>
           <Name>Nazwa</Name>
         </AttributeRelationship>
@@ -81,14 +82,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8516b6d9-9d2a-4aab-a7f5-695da6a5870c">
+    <Attribute dwd:design-time-name="ebc5670b-3bc3-459d-8799-7a1b9c167dca">
       <ID>Kod Linii IATA</ID>
       <Name>Kod Linii IATA</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="508116ca-deb0-4f27-8429-cd1c2e503f55">
+        <KeyColumn dwd:design-time-name="56a1155e-61a1-4a5c-8f0c-fb8f03e4d9a7">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="25a4e10a-6c2d-4faa-bd47-59cfb8961361">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1046354e-263f-487e-bdd6-dc6a1e9c1a4b">
             <TableID>dbo_LiniaLotnicza</TableID>
             <ColumnID>Kod_Linii_IATA</ColumnID>
           </Source>
@@ -98,14 +99,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="688a9c59-6b95-4118-93da-9a78372e2e68">
+    <Attribute dwd:design-time-name="39ac0ba1-fa06-48b5-a67a-088cccfa8817">
       <ID>Nazwa</ID>
       <Name>Nazwa</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ee7412e3-eab5-4563-be17-75d6ecfad4b6">
+        <KeyColumn dwd:design-time-name="fb36b52a-bf80-4f72-9e04-f5add0c35ca7">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="abb1c71f-060b-4a5f-adb1-fcad70d38ac1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fce00329-0a0d-4e47-b43c-1632229b8bc5">
             <TableID>dbo_LiniaLotnicza</TableID>
             <ColumnID>Nazwa</ColumnID>
           </Source>

@@ -23,21 +23,21 @@ fakerPL = Faker('pl_PL')
 
 
 linieLotnicze = "LinieLotnicze.bulk"
-liczbaLini = 180
+liczbaLini = 150
 
 koordynatorzy = "Koordynatorzy.bulk"
-liczbaKoordynatorow = 10
+liczbaKoordynatorow = 40
 
 samoloty = "Samoloty.bulk"
-liczbaSamolotow = 180
+liczbaSamolotow = 400
 
 przeglady = "Przeglady.bulk"
-liczbaPrzegladow = 2000
-dateStart = datetime.datetime.strptime('2021-9-01', '%Y-%m-%d')
-dateEnd = datetime.datetime.strptime('2021-9-30', '%Y-%m-%d')
+liczbaPrzegladow = 1000000
+dateStart = datetime.datetime.strptime('2018-1-01', '%Y-%m-%d')
+dateEnd = datetime.datetime.strptime('2022-12-30', '%Y-%m-%d')
 
 zespoly = "Zespoly.csv"
-liczbaZespolow = 20
+liczbaZespolow = 40
 
 # linie lotnicze
 file = open(linieLotnicze, "a")

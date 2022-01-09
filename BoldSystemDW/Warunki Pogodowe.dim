@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="52a8d7f4-7cbe-4a90-9310-67216a8ba2f0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b625869d-61ff-4947-b347-f540896bb8cc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Warunki Pogodowe</ID>
   <Name>Warunki Pogodowe</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -68,41 +68,42 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a2c4a264-212b-4fe1-9688-12a30e17b1f1">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0f04a8de-4b7d-491e-8977-1af7c65bb91d">
     <DataSourceViewID>Bold System DW</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="04a31c36-9d89-473c-9915-f05584a35e5c">
+  <ErrorConfiguration dwd:design-time-name="372b4b83-9de1-41a3-98c0-700da4d3f584">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="c46cd4f1-f6bd-412e-9755-8fc1fc5d4b19">
+    <Attribute dwd:design-time-name="2d8e9c60-5ce8-4b1e-a03e-3d2ab7a7dbcc">
       <ID>ID Warunkow Pogodowych</ID>
       <Name>ID Warunkow Pogodowych</Name>
       <Usage>Key</Usage>
+      <EstimatedCount>18</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="723c0a9e-4ccd-4e4b-9174-260e8cf74229">
+        <KeyColumn dwd:design-time-name="29e259d0-b7cf-4d7f-9122-3f3984921023">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c062b075-bebd-4bba-bfe2-8140d08f7357">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce240e03-f121-4dc8-b656-215eaa54a5b2">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>ID_Warunkow_Pogodowych</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="c1db5e0c-0e11-43a6-9899-5a028cfee982">
+        <AttributeRelationship dwd:design-time-name="b490e2cf-518c-4369-8ce8-ca42f85f216b">
           <AttributeID>Temperatura</AttributeID>
           <Name>Temperatura</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ae7f61b4-4faf-4d56-b9c9-5f9abc4abb8f">
+        <AttributeRelationship dwd:design-time-name="e2ed6dd2-6c6d-4f71-accd-bc868d914a80">
           <AttributeID>Predkosc Wiatru</AttributeID>
           <Name>Predkosc Wiatru</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="07cccf86-9eed-42ea-8cfe-260f67e5ae65">
+        <AttributeRelationship dwd:design-time-name="2e26b21e-a9cb-4309-8674-86842b923e61">
           <AttributeID>Czy Opady</AttributeID>
           <Name>Czy Opady</Name>
         </AttributeRelationship>
@@ -111,14 +112,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d50d5de4-40fa-4a35-bc2b-1d0fe1b7a9c0">
+    <Attribute dwd:design-time-name="eb4f0a2f-99f5-4b85-ad40-2d080013fe51">
       <ID>Temperatura</ID>
       <Name>Temperatura</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ba274634-4698-456e-ae4d-705eb6b48846">
+        <KeyColumn dwd:design-time-name="036ca3f1-c1a7-4378-b48c-4f26e039a9c1">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d03fad0-0fb8-44fc-be40-e3a7ef5c0ed5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7f970b09-a0ee-4882-affb-efb43b2d9144">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>Temperatura</ColumnID>
           </Source>
@@ -127,14 +128,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="35474f21-6b65-421d-b3a3-43f7668f546c">
+    <Attribute dwd:design-time-name="b7e465d3-0ec3-42ba-a715-f36404b7af66">
       <ID>Predkosc Wiatru</ID>
       <Name>Predkosc Wiatru</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5f3f3046-3f6a-4a88-89d1-b8ff3f13289f">
+        <KeyColumn dwd:design-time-name="f75d4c92-85cb-46b6-99ef-9c5f9e182ab0">
           <DataType>WChar</DataType>
           <DataSize>50</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="44cfcca8-cfb6-4486-b2a4-5bd118a90f48">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6aa1015e-f6ba-4867-8266-a562d627cec9">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>Predkosc_Wiatru</ColumnID>
           </Source>
@@ -143,14 +144,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f48fc2ee-e1ab-45f9-ac02-ea21ba7cca60">
+    <Attribute dwd:design-time-name="a5121014-1f22-43fb-9f1a-5342d617f75d">
       <ID>Czy Opady</ID>
       <Name>Czy Opady</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="406156bf-4a10-4f86-91cf-57778a7bbc32">
+        <KeyColumn dwd:design-time-name="32a49d79-e8b1-4ad4-813e-2030faa63fc7">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca707a4b-8c8d-49cb-9d3d-e2a030a91a1a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d5ebc6d-98b7-4740-b16c-cd8781c4b80f">
             <TableID>dbo_Warunki_Pogodowe</TableID>
             <ColumnID>Czy_Opady</ColumnID>
           </Source>

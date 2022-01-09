@@ -9,7 +9,7 @@ IloscStazystow INTEGER);
 go
 
 BULK INSERT dbo.BoldSystemTemp
-    FROM 'C:\Users\barto\Desktop\BoldSystemDW\generator\Zespoly.csv'
+    FROM 'E:\VisualProjekty\BoldSYstem\BoldSystemDW\generator\Zespoly.csv'
     WITH
     (
     FIRSTROW = 2,
